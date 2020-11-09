@@ -1,0 +1,26 @@
+{
+  "id": "com.technisat.smarthome",
+  "version": "1.0.0",
+  "compatibility": ">=4.2.0",
+  "sdk": 2,
+  "name": {
+    "en": "Technisat SmartHome"
+  },
+  "description": {
+    "en": "Let Technisat SmartHome devices work with Homey",
+    "nl": "Laat Technisat SmartHome apparaten samenwerken met Homey"
+  },
+  "category": [
+    "lights",
+    "appliances"
+  ],
+  "permissions": [],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Kaalus",
+    "email": "homey@kaalus.nl"
+  }
+}

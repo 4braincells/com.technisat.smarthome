@@ -1,0 +1,48 @@
+{
+  "id": "single-wall-switch",
+  "name": {
+    "en": "Single Wall Switch"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff",
+    "measure_power"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 665,
+    "productTypeId": [
+      2
+    ],
+    "productId": [
+      6800
+    ],
+    "zwaveAllianceProductId": 3677,
+    "associationGroups": [
+      1
+    ],
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Press the top button on your {{driverNameEn}} three times within a second.",
+        "nl": "Druk driemaal binnen een seconde op de bovenste knop van uw {{driverNameNl}}."
+      }
+    },
+    "unlearnmode": {
+			"instruction": {
+        "en": "Hold the bottom button for at least 10 seconds, the LED should light up red.",
+        "nl": "Houd de onderste knop ingedrukt voor minstens 10 seconden. De LED brand nu rood."
+      }
+    },
+    "associationGroupsOptions": {
+      "1": {
+        "hint": {
+          "en": "The lifeline group reports the device's status."
+        }
+      }
+    }
+  }
+}
