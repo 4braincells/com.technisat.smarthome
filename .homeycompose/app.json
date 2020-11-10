@@ -6,6 +6,7 @@
   "name": {
     "en": "Technisat SmartHome"
   },
+  "brandColor": "#009EF3",
   "description": {
     "en": "Let Technisat SmartHome devices work with Homey",
     "nl": "Laat Technisat SmartHome apparaten samenwerken met Homey"
