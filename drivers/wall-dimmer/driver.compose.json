@@ -1,0 +1,50 @@
+{
+  "id": "wall-dimmer",
+  "name": {
+    "en": "Wall Dimmer"
+  },
+  "class": "light",
+  "capabilities": [
+    "dim",
+    "measure_power",
+    "meter_power",
+    "onoff"
+  ],
+  "images": {
+    "large": "/drivers/wall-dimmer/assets/images/large.png",
+    "small": "/drivers/wall-dimmer/assets/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 665,
+    "productTypeId": [
+      4
+    ],
+    "productId": [
+      6802
+    ],
+    "zwaveAllianceProductId": 3798,
+    "associationGroups": [
+      1
+    ],
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Press the top button on your {{driverNameEn}} three times within a second.",
+        "nl": "Druk driemaal binnen een seconde op de bovenste knop van uw {{driverNameNl}}."
+      }
+    },
+    "unlearnmode": {
+			"instruction": {
+        "en": "Hold the bottom button for at least 10 seconds, the LED should light up red.",
+        "nl": "Houd de onderste knop ingedrukt voor minstens 10 seconden. De LED brand nu rood."
+      }
+    },
+    "associationGroupsOptions": {
+      "1": {
+        "hint": {
+          "en": "The lifeline group reports the device's status."
+        }
+      }
+    }
+  }
+}
