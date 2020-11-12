@@ -10,7 +10,7 @@ class SingleSwitch extends ZwaveDevice {
 		this.log('SingleSwitch has been inited');
 
 		this.registerCapability('onoff', 'SWITCH_BINARY');
-		this.registerCapability('measure_current', 'METER');
+		this.registerCapability('measure_power', 'METER');
 		this.registerCapability('meter_power', 'METER');
 	}
 

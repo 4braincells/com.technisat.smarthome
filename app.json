@@ -34,7 +34,7 @@
       "class": "light",
       "capabilities": [
         "onoff",
-        "measure_current",
+        "measure_power",
         "meter_power"
       ],
       "images": {

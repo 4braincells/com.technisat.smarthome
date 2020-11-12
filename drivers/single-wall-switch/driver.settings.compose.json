@@ -35,8 +35,8 @@
       "de": "Stromverbrauch-Meldung Intervall"
     },
     "hint": {
-      "en": "Interval of active current meter reports in 10 seconds increments.",
-      "nl": "Interval van periodieke rapportage van het stroomverbruik. In stappen van 10 seconden.",
+      "en": "Interval of current power meter reports in 10 seconds increments.",
+      "nl": "Interval van periodieke rapportage van het opgenomen vermogen . In stappen van 10 seconden.",
       "de": "Intervall der aktuellen Stromverbrauch-Meldung. Wert in 10 sekunden."
     },
     "zwave": {
