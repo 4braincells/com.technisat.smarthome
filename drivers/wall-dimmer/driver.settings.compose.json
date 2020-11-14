@@ -70,42 +70,90 @@
   },
   {
     "id": "4",
-    "value": false,
+    "value": "0",
     "label": {
-      "en": "Parameter 4"
+      "en": "Button operation",
+      "nl": "Knop instellingen",
+      "de": "Funktion der Tastpositionen"
     },
     "hint": {
-      "en": "Operation mode of button T"
+      "en": "Operations mode for push buttons controlling the output.",
+      "nl": "Schakelgedrag van fysieke knoppen.",
+      "de": "Funktion der Tastpositionen T1 und T2."
     },
     "zwave": {
       "index": 4,
       "size": 1
     },
-    "type": "checkbox"
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Button T1 turns output L1 on, button T2 turns output L1 off.",
+          "nl": "Knop T1 zet uitgang L1 aan, knop T2 zet uitgang L1 uit.",
+          "de": "T1 schaltet Ausgang L1 an, T2 schaltet Ausgang L1 aus."
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Buttons T1 and T2 turn output L1 on/off.",
+          "nl": "Knoppen T1 en T2 schakelen L1 aan/uit.",
+          "de": "T1 und T2 schalten L1 an/aus."
+        }
+      }
+    ],
+    "type": "dropdown"
   },
   {
     "id": "5",
-    "value": false,
+    "value": "0",
     "label": {
-      "en": "Parameter 5"
+      "en": "Input switch configuration",
+      "nl": "Configuratie schakelingang",
+      "de": "Schalterkonfiguration"
     },
     "hint": {
-      "en": "Configuration of switch type connected to extension connector S"
+      "en": "Configuration of switch type connected to extension input S.",
+      "nl": "Configuratie van de schakelaar aangesloten op ingang S.",
+      "de": "Schalterkonfiguration am Nebenstellen-Eingang S."
     },
     "zwave": {
       "index": 5,
       "size": 1
     },
-    "type": "checkbox"
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Switch",
+          "nl": "Schakelaar",
+          "de": "Schalter"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Button",
+          "nl": "Knop",
+          "de": "Taster"
+        }
+      }
+    ],
+    "type": "dropdown"
   },
   {
     "id": "6",
     "value": "1",
     "label": {
-      "en": "Parameter 6"
+      "en": "Input S notifications",
+      "nl": "Notificaties voor ingang S",
+      "de": "Nebenstellen-Eingang S Belegung"
     },
     "hint": {
-      "en": "Central Scene mapping of extension input S"
+      "en": "Central Scene mapping of extension input S.",
+      "nl": "Configuratie van centrale scenes voor ingang S.",
+      "de": "Zentrale Szenen Belegung auf Nebenstellen-Eingang S."
     },
     "zwave": {
       "index": 6,
@@ -115,19 +163,25 @@
       {
         "id": "1",
         "label": {
-          "en": "map extension input S to central scene of T1"
+          "en": "Use central scene notifications from button T1.",
+          "nl": "Gebruik de scenes van knop T1.",
+          "de": "Legt S auf die Zentrale Szene von T1."
         }
       },
       {
         "id": "2",
         "label": {
-          "en": "map extension input S to central scene of T2"
+          "en": "Use central scene notifications from button T2.",
+          "nl": "Gebruik de scenes van knop T2.",
+          "de": "Legt S auf die Zentrale Szene von T2."
         }
       },
       {
         "id": "3",
         "label": {
-          "en": "map extension input S to own central scene "
+          "en": "Input S uses a seperate channel for central scene notifications.",
+          "nl": "Ingang S gebruikt een eigen kanaal voor centrale scenes.",
+          "de": "Legt S auf eine eigene Zentrale Szene."
         }
       }
     ],
@@ -135,17 +189,37 @@
   },
   {
     "id": "7",
-    "value": false,
+    "value": "0",
     "label": {
       "en": "Parameter 7"
     },
     "hint": {
-      "en": "Dimming curve selection"
+      "en": "Dimming curve selection",
+      "nl": "Wijzig dim curve",
+      "de": "Dimmung kurve wahlen"
     },
     "zwave": {
       "index": 7,
       "size": 1
     },
-    "type": "checkbox"
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Dimming curve 1",
+          "nl": "Dim curve 1",
+          "de": "Dimmung kurve 1"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Dimming curve 2",
+          "nl": "Dim curve 2",
+          "de": "Dimmung kurve s2"
+        }
+      }
+    ],
+    "type": "dropdown"
   }
 ]

@@ -264,6 +264,281 @@
           "type": "dropdown"
         }
       ]
+    },
+    {
+      "id": "wall-dimmer",
+      "name": {
+        "en": "Wall Dimmer"
+      },
+      "class": "light",
+      "capabilities": [
+        "dim",
+        "measure_power",
+        "meter_power",
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/wall-dimmer/assets/images/large.png",
+        "small": "/drivers/wall-dimmer/assets/images/small.png"
+      },
+      "zwave": {
+        "manufacturerId": 665,
+        "productTypeId": [
+          4
+        ],
+        "productId": [
+          6802
+        ],
+        "zwaveAllianceProductId": 3798,
+        "associationGroups": [
+          1
+        ],
+        "learnmode": {
+          "image": "/drivers/wall-dimmer/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the top button on your Wall Dimmer three times within a second.",
+            "nl": "Druk driemaal binnen een seconde op de bovenste knop van uw Wall Dimmer."
+          }
+        },
+        "unlearnmode": {
+          "instruction": {
+            "en": "Hold the bottom button for at least 10 seconds, the LED should light up red.",
+            "nl": "Houd de onderste knop ingedrukt voor minstens 10 seconden. De LED brand nu rood."
+          }
+        },
+        "associationGroupsOptions": {
+          "1": {
+            "hint": {
+              "en": "The lifeline group reports the device's status."
+            }
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "1",
+          "value": 1,
+          "label": {
+            "en": "Central scene notifications",
+            "nl": "Centrale scenes",
+            "de": "Zentrale Szenen"
+          },
+          "hint": {
+            "en": "Enable/disable central scene notifications for 2x-5x button presses.",
+            "nl": "Zet centrale scene notificaties aan voor 2-5 knop drukken.",
+            "de": "Aktiviert/Deaktiviert Zentrale Szenen Benachrichtigung für 2x-5x faches drücken."
+          },
+          "zwave": {
+            "index": 1,
+            "size": 1
+          },
+          "attr": {
+            "min": 0,
+            "max": 1
+          },
+          "type": "number"
+        },
+        {
+          "id": "2",
+          "value": 3,
+          "attr": {
+            "min": 3,
+            "max": 8640
+          },
+          "label": {
+            "en": "Current report interval",
+            "nl": "Stroom meting rapportage",
+            "de": "Stromverbrauch-Meldung Intervall"
+          },
+          "hint": {
+            "en": "Interval of current power meter reports in 10 seconds increments.",
+            "nl": "Interval van periodieke rapportage van het opgenomen vermogen . In stappen van 10 seconden.",
+            "de": "Intervall der aktuellen Stromverbrauch-Meldung. Wert in 10 sekunden."
+          },
+          "zwave": {
+            "index": 2,
+            "size": 2
+          },
+          "type": "number"
+        },
+        {
+          "id": "3",
+          "value": 60,
+          "attr": {
+            "min": 0,
+            "max": 30240
+          },
+          "label": {
+            "en": "Power report interval",
+            "nl": "Energie meting rapportage",
+            "de": "Energieverbrauch-Meldung Intervall"
+          },
+          "hint": {
+            "en": "Interval of active energy meter reports in minutes. Value in minutes.",
+            "nl": "Interval van periodieke rapportage van het energieverbruik. Waarde in minuten.",
+            "de": "Intervall der aktuellen Energieverbrauch-Meldung. Wert in minuten."
+          },
+          "zwave": {
+            "index": 3,
+            "size": 2
+          },
+          "type": "number"
+        },
+        {
+          "id": "4",
+          "value": "0",
+          "label": {
+            "en": "Button operation",
+            "nl": "Knop instellingen",
+            "de": "Funktion der Tastpositionen"
+          },
+          "hint": {
+            "en": "Operations mode for push buttons controlling the output.",
+            "nl": "Schakelgedrag van fysieke knoppen.",
+            "de": "Funktion der Tastpositionen T1 und T2."
+          },
+          "zwave": {
+            "index": 4,
+            "size": 1
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Button T1 turns output L1 on, button T2 turns output L1 off.",
+                "nl": "Knop T1 zet uitgang L1 aan, knop T2 zet uitgang L1 uit.",
+                "de": "T1 schaltet Ausgang L1 an, T2 schaltet Ausgang L1 aus."
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Buttons T1 and T2 turn output L1 on/off.",
+                "nl": "Knoppen T1 en T2 schakelen L1 aan/uit.",
+                "de": "T1 und T2 schalten L1 an/aus."
+              }
+            }
+          ],
+          "type": "dropdown"
+        },
+        {
+          "id": "5",
+          "value": "0",
+          "label": {
+            "en": "Input switch configuration",
+            "nl": "Configuratie schakelingang",
+            "de": "Schalterkonfiguration"
+          },
+          "hint": {
+            "en": "Configuration of switch type connected to extension input S.",
+            "nl": "Configuratie van de schakelaar aangesloten op ingang S.",
+            "de": "Schalterkonfiguration am Nebenstellen-Eingang S."
+          },
+          "zwave": {
+            "index": 5,
+            "size": 1
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Switch",
+                "nl": "Schakelaar",
+                "de": "Schalter"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Button",
+                "nl": "Knop",
+                "de": "Taster"
+              }
+            }
+          ],
+          "type": "dropdown"
+        },
+        {
+          "id": "6",
+          "value": "1",
+          "label": {
+            "en": "Input S notifications",
+            "nl": "Notificaties voor ingang S",
+            "de": "Nebenstellen-Eingang S Belegung"
+          },
+          "hint": {
+            "en": "Central Scene mapping of extension input S.",
+            "nl": "Configuratie van centrale scenes voor ingang S.",
+            "de": "Zentrale Szenen Belegung auf Nebenstellen-Eingang S."
+          },
+          "zwave": {
+            "index": 6,
+            "size": 1
+          },
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "Use central scene notifications from button T1.",
+                "nl": "Gebruik de scenes van knop T1.",
+                "de": "Legt S auf die Zentrale Szene von T1."
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Use central scene notifications from button T2.",
+                "nl": "Gebruik de scenes van knop T2.",
+                "de": "Legt S auf die Zentrale Szene von T2."
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "Input S uses a seperate channel for central scene notifications.",
+                "nl": "Ingang S gebruikt een eigen kanaal voor centrale scenes.",
+                "de": "Legt S auf eine eigene Zentrale Szene."
+              }
+            }
+          ],
+          "type": "dropdown"
+        },
+        {
+          "id": "7",
+          "value": "0",
+          "label": {
+            "en": "Parameter 7"
+          },
+          "hint": {
+            "en": "Dimming curve selection",
+            "nl": "Wijzig dim curve",
+            "de": "Dimmung kurve wahlen"
+          },
+          "zwave": {
+            "index": 7,
+            "size": 1
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Dimming curve 1",
+                "nl": "Dim curve 1",
+                "de": "Dimmung kurve 1"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Dimming curve 2",
+                "nl": "Dim curve 2",
+                "de": "Dimmung kurve s2"
+              }
+            }
+          ],
+          "type": "dropdown"
+        }
+      ]
     }
   ]
 }
