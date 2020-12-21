@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.technisat.smarthome",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "compatibility": ">=4.2.0",
   "sdk": 2,
   "name": {
@@ -10,7 +10,8 @@
   "brandColor": "#009EF3",
   "description": {
     "en": "Let Technisat SmartHome devices work with Homey",
-    "nl": "Laat Technisat SmartHome apparaten samenwerken met Homey"
+    "nl": "Laat Technisat SmartHome apparaten samenwerken met Homey",
+    "de": "Lassen Sie Technisat Smart Home-Geräte mit Honey zusammenarbeiten"
   },
   "category": [
     "lights",
@@ -29,7 +30,9 @@
     {
       "id": "single-wall-switch",
       "name": {
-        "en": "Single Wall Switch"
+        "en": "Single Wall Switch",
+        "nl": "Wandschakelaar",
+        "de": "Ausschalter"
       },
       "class": "light",
       "capabilities": [
@@ -57,19 +60,23 @@
           "image": "/drivers/single-wall-switch/assets/learnmode.svg",
           "instruction": {
             "en": "Press the top button on your Single Wall Switch three times within a second.",
-            "nl": "Druk driemaal binnen een seconde op de bovenste knop van uw Single Wall Switch."
+            "nl": "Druk driemaal binnen een seconde op de bovenste knop van uw Wandschakelaar.",
+            "de": "Drücken Sie die obere Taste auf Ihrem {{DriverNameDe}} dreimal innerhalb einer Sekunde."
           }
         },
         "unlearnmode": {
           "instruction": {
             "en": "Hold the bottom button for at least 10 seconds, the LED should light up red.",
-            "nl": "Houd de onderste knop ingedrukt voor minstens 10 seconden. De LED brand nu rood."
+            "nl": "Houd de onderste knop ingedrukt voor minstens 10 seconden. De LED brand nu rood.",
+            "de": "Halten Sie die obere Taste mindestens 10 Sekunden lang gedrückt. Die LED sollte rot leuchten"
           }
         },
         "associationGroupsOptions": {
           "1": {
             "hint": {
-              "en": "The lifeline group reports the device's status."
+              "en": "The lifeline group reports the device's status.",
+              "nl": "De lifeline groep rapporteert de status van het apparaat.",
+              "de": "Die lifelinfe gruppe meldet den Status des Geräts."
             }
           }
         }
@@ -268,7 +275,9 @@
     {
       "id": "wall-dimmer",
       "name": {
-        "en": "Wall Dimmer"
+        "en": "Wall Dimmer",
+        "nl": "Wanddimmer",
+        "de": "Dimmer"
       },
       "class": "light",
       "capabilities": [
@@ -297,19 +306,23 @@
           "image": "/drivers/wall-dimmer/assets/learnmode.svg",
           "instruction": {
             "en": "Press the top button on your Wall Dimmer three times within a second.",
-            "nl": "Druk driemaal binnen een seconde op de bovenste knop van uw Wall Dimmer."
+            "nl": "Druk driemaal binnen een seconde op de bovenste knop van uw Wanddimmer.",
+            "de": "Drücken Sie die obere Taste auf Ihrem {{DriverNameDe}} dreimal innerhalb einer Sekunde."
           }
         },
         "unlearnmode": {
           "instruction": {
-            "en": "Hold the bottom button for at least 10 seconds, the LED should light up red.",
-            "nl": "Houd de onderste knop ingedrukt voor minstens 10 seconden. De LED brand nu rood."
+            "en": "Hold the top button for at least 10 seconds, the LED should light up red.",
+            "nl": "Houd de bovensten knop ingedrukt voor minstens 10 seconden. De LED brand nu rood.",
+            "de": "Halten Sie die obere Taste mindestens 10 Sekunden lang gedrückt. Die LED sollte rot leuchten"
           }
         },
         "associationGroupsOptions": {
           "1": {
             "hint": {
-              "en": "The lifeline group reports the device's status."
+              "en": "The lifeline group reports the device's status.",
+              "nl": "De lifeline groep rapporteert de status van het apparaat.",
+              "de": "Die lifelinfe gruppe meldet den Status des Geräts."
             }
           }
         }

@@ -1,7 +1,9 @@
 {
   "id": "wall-dimmer",
   "name": {
-    "en": "Wall Dimmer"
+    "en": "Wall Dimmer",
+    "nl": "Wanddimmer",
+    "de": "Dimmer"
   },
   "class": "light",
   "capabilities": [
@@ -30,19 +32,23 @@
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Press the top button on your {{driverNameEn}} three times within a second.",
-        "nl": "Druk driemaal binnen een seconde op de bovenste knop van uw {{driverNameNl}}."
+        "nl": "Druk driemaal binnen een seconde op de bovenste knop van uw {{driverNameNl}}.",
+        "de": "Drücken Sie die obere Taste auf Ihrem {{DriverNameDe}} dreimal innerhalb einer Sekunde."
       }
     },
     "unlearnmode": {
 			"instruction": {
-        "en": "Hold the bottom button for at least 10 seconds, the LED should light up red.",
-        "nl": "Houd de onderste knop ingedrukt voor minstens 10 seconden. De LED brand nu rood."
+        "en": "Hold the top button for at least 10 seconds, the LED should light up red.",
+        "nl": "Houd de bovensten knop ingedrukt voor minstens 10 seconden. De LED brand nu rood.",
+        "de": "Halten Sie die obere Taste mindestens 10 Sekunden lang gedrückt. Die LED sollte rot leuchten"
       }
     },
     "associationGroupsOptions": {
       "1": {
         "hint": {
-          "en": "The lifeline group reports the device's status."
+          "en": "The lifeline group reports the device's status.",
+          "nl": "De lifeline groep rapporteert de status van het apparaat.",
+          "de": "Die lifelinfe gruppe meldet den Status des Geräts."
         }
       }
     }
