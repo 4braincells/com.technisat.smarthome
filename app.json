@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.technisat.smarthome",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "compatibility": ">=4.2.0",
   "sdk": 2,
   "name": {
@@ -27,6 +27,184 @@
     "email": "homey@kaalus.nl"
   },
   "drivers": [
+    {
+      "id": "double-wall-switch",
+      "name": {
+        "en": "Double Wall Switch",
+        "nl": "Dubbele wandschakelaar",
+        "de": "Serieschalter"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "measure_power",
+        "meter_power"
+      ],
+      "images": {
+        "large": "/drivers/double-wall-switch/assets/images/large.png",
+        "small": "/drivers/double-wall-switch/assets/images/small.png"
+      },
+      "zwave": {
+        "manufacturerId": 665,
+        "productTypeId": [
+          3
+        ],
+        "productId": [
+          6801
+        ],
+        "zwaveAllianceProductId": 3779,
+        "associationGroups": [
+          1
+        ],
+        "multiChannelNodes": {
+          "2": {
+            "class": "light",
+            "capabilities": [
+              "onoff"
+            ],
+            "icon": "/drivers/double-wall-switch/assets/icon.svg",
+            "name": {
+              "en": "Output 2",
+              "nl": "Uitgang 2",
+              "de": "Ausgang 2"
+            },
+            "settings": []
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/double-wall-switch/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the top left button on your Double Wall Switch three times within a second.",
+            "nl": "Druk driemaal binnen een seconde op de knop linksboven van uw Dubbele wandschakelaar.",
+            "de": "Drücken Sie die linkere obere Taste auf Ihrem {{DriverNameDe}} dreimal innerhalb einer Sekunde."
+          }
+        },
+        "unlearnmode": {
+          "instruction": {
+            "en": "Hold the bottom left button for at least 10 seconds, the LED should light up red.",
+            "nl": "Houd de knop linksonder ingedrukt voor minstens 10 seconden. De LED brand nu rood.",
+            "de": "Halten Sie die linkere untere Taste mindestens 10 Sekunden lang gedrückt. Die LED sollte rot leuchten."
+          }
+        },
+        "associationGroupsOptions": {
+          "1": {
+            "hint": {
+              "en": "The lifeline group reports the device's status.",
+              "nl": "De lifeline groep rapporteert de status van het apparaat.",
+              "de": "Die lifelinfe gruppe meldet den Status des Geräts."
+            }
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "1",
+          "value": 1,
+          "label": {
+            "en": "Central scene notifications",
+            "nl": "Centrale scenes",
+            "de": "Zentrale Szenen"
+          },
+          "hint": {
+            "en": "Enable/disable central scene notifications for 2x-5x button presses.",
+            "nl": "Zet centrale scene notificaties aan voor 2-5 knop drukken.",
+            "de": "Aktiviert/Deaktiviert Zentrale Szenen Benachrichtigung für 2x-5x faches drücken."
+          },
+          "zwave": {
+            "index": 1,
+            "size": 1
+          },
+          "attr": {
+            "min": 0,
+            "max": 1
+          },
+          "type": "number"
+        },
+        {
+          "id": "2",
+          "value": 3,
+          "attr": {
+            "min": 3,
+            "max": 8640
+          },
+          "label": {
+            "en": "Current report interval",
+            "nl": "Stroom meting rapportage",
+            "de": "Stromverbrauch-Meldung Intervall"
+          },
+          "hint": {
+            "en": "Interval of current power meter reports in 10 seconds increments.",
+            "nl": "Interval van periodieke rapportage van het opgenomen vermogen . In stappen van 10 seconden.",
+            "de": "Intervall der aktuellen Stromverbrauch-Meldung. Wert in 10 sekunden."
+          },
+          "zwave": {
+            "index": 2,
+            "size": 2
+          },
+          "type": "number"
+        },
+        {
+          "id": "3",
+          "value": 60,
+          "attr": {
+            "min": 0,
+            "max": 30240
+          },
+          "label": {
+            "en": "Power report interval",
+            "nl": "Energie meting rapportage",
+            "de": "Energieverbrauch-Meldung Intervall"
+          },
+          "hint": {
+            "en": "Interval of active energy meter reports in minutes. Value in minutes.",
+            "nl": "Interval van periodieke rapportage van het energieverbruik. Waarde in minuten.",
+            "de": "Intervall der aktuellen Energieverbrauch-Meldung. Wert in minuten."
+          },
+          "zwave": {
+            "index": 3,
+            "size": 2
+          },
+          "type": "number"
+        },
+        {
+          "id": "4",
+          "value": "0",
+          "label": {
+            "en": "Button operation",
+            "nl": "Knop instellingen",
+            "de": "Funktion der Tastpositionen"
+          },
+          "hint": {
+            "en": "Operations mode for push buttons controlling the output.",
+            "nl": "Schakelgedrag van fysieke knoppen.",
+            "de": "Funktion der Tastpositionen."
+          },
+          "zwave": {
+            "index": 4,
+            "size": 1
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Button T1/T3 turns output L1/L2 on, button T2/T4 turns output L1/L2 off.",
+                "nl": "Knop T1/T3 zet uitgang L1/L2 aan, knop T2/T4 zet uitgang L1/L2 uit.",
+                "de": "T1/T3 schaltet Ausgang L1/L2 an, T2/T4schaltet Ausgang L1/L2 aus."
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Buttons T1 and T2 switches L1, buttons T3 and T4 switches L2.",
+                "nl": "Knoppen T1 en T2 schakelen L1 aan/uit, T3 en T4 schakelen L2 in/uit.",
+                "de": "T1 und T2 schalten L1 an/aus, T3 und T4 schalten L2 an/aus."
+              }
+            }
+          ],
+          "type": "dropdown"
+        }
+      ]
+    },
     {
       "id": "single-wall-switch",
       "name": {
@@ -68,7 +246,7 @@
           "instruction": {
             "en": "Hold the bottom button for at least 10 seconds, the LED should light up red.",
             "nl": "Houd de onderste knop ingedrukt voor minstens 10 seconden. De LED brand nu rood.",
-            "de": "Halten Sie die obere Taste mindestens 10 Sekunden lang gedrückt. Die LED sollte rot leuchten"
+            "de": "Halten Sie die untere Taste mindestens 10 Sekunden lang gedrückt. Die LED sollte rot leuchten."
           }
         },
         "associationGroupsOptions": {
@@ -312,9 +490,9 @@
         },
         "unlearnmode": {
           "instruction": {
-            "en": "Hold the top button for at least 10 seconds, the LED should light up red.",
-            "nl": "Houd de bovensten knop ingedrukt voor minstens 10 seconden. De LED brand nu rood.",
-            "de": "Halten Sie die obere Taste mindestens 10 Sekunden lang gedrückt. Die LED sollte rot leuchten"
+            "en": "Hold the bottom button for at least 10 seconds, the LED should light up red.",
+            "nl": "Houd de onderste knop ingedrukt voor minstens 10 seconden. De LED brand nu rood.",
+            "de": "Halten Sie die untere Taste mindestens 10 Sekunden lang gedrückt. Die LED sollte rot leuchten."
           }
         },
         "associationGroupsOptions": {
