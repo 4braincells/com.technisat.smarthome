@@ -6,5 +6,10 @@
     "en": "Added Wall dimmer. Added German translations.",
     "nl": "Wanddimmer en Duitse vertalingen toegevoegd.",
     "de": "Dimmer und Deutsche Übersetzungen hinzugefügt."
+  },
+  "1.2.0" : {
+    "en": "Added Double switch dimmer.",
+    "nl": "Dubbele wanddimmer toegevoegd.",
+    "de": "Serieschalter hinzugefügt."
   }
 }
