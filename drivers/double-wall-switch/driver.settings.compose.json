@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "id": "central_scenes",
     "value": 1,
     "label": {
       "en": "Central scene notifications",
@@ -23,7 +23,7 @@
     "type": "number"
   },
   {
-    "id": "2",
+    "id": "current_report",
     "value": 3,
     "attr": {
       "min": 3,
@@ -46,7 +46,7 @@
     "type": "number"
   },
   {
-    "id": "3",
+    "id": "power_report",
     "value": 60,
     "attr": {
       "min": 0,
@@ -69,7 +69,7 @@
     "type": "number"
   },
   {
-    "id": "4",
+    "id": "button_mode",
     "value": "0",
     "label": {
       "en": "Button operation",

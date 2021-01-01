@@ -13,8 +13,8 @@
     "onoff"
   ],
   "images": {
-    "large": "/drivers/wall-dimmer/assets/images/large.png",
-    "small": "/drivers/wall-dimmer/assets/images/small.png"
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
   },
   "zwave": {
     "manufacturerId": 665,
