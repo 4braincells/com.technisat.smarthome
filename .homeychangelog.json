@@ -11,5 +11,10 @@
     "en": "Added Double switch dimmer.",
     "nl": "Dubbele wanddimmer toegevoegd.",
     "de": "Serieschalter hinzugefügt."
+  },
+  "1.3.0" : {
+    "en": "Added Rollershutter.",
+    "nl": "Rolluikschakelaar toegevoegd.",
+    "de": "Rollladenschalter hinzugefügt."
   }
 }

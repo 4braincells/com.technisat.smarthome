@@ -1,0 +1,53 @@
+{
+  "id": "roller-shutter",
+  "name": {
+    "en": "Roller shutter",
+    "nl": "Rolluik schakelaar",
+    "de": "Rollladenschalter"
+  },
+  "class": "windowcoverings",
+  "capabilities": [
+    "windowcoverings_set"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 665,
+    "productTypeId": [
+      5
+    ],
+    "productId": [
+      6803
+    ],
+    "zwaveAllianceProductId": 3778,
+    "associationGroups": [
+      1
+    ],
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Press the top button on your {{driverNameEn}} three times within a second.",
+        "nl": "Druk driemaal binnen een seconde op de bovenste knop van uw {{driverNameNl}}.",
+        "de": "Drücken Sie die obere Taste auf Ihrem {{DriverNameDe}} dreimal innerhalb einer Sekunde."
+      }
+    },
+    "unlearnmode": {
+			"instruction": {
+        "en": "Hold the bottom button for at least 10 seconds, the LED should light up red.",
+        "nl": "Houd de onderste knop ingedrukt voor minstens 10 seconden. De LED brand nu rood.",
+        "de": "Halten Sie die untere Taste mindestens 10 Sekunden lang gedrückt. Die LED sollte rot leuchten."
+      }
+    },
+    "associationGroupsOptions": {
+      "1": {
+        "hint": {
+          "en": "The lifeline group reports the device's status.",
+          "nl": "De lifeline groep rapporteert de status van het apparaat.",
+          "de": "Die lifelinfe gruppe meldet den Status des Geräts."
+        }
+      }
+    }
+  }
+}
