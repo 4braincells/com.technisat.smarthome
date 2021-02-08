@@ -1,0 +1,70 @@
+{
+  "id": "double-wall-switch",
+  "name": {
+    "en": "Double Wall Switch",
+    "nl": "Dubbele wandschakelaar",
+    "de": "Serieschalter"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff",
+    "measure_power",
+    "meter_power"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 665,
+    "productTypeId": [
+      3
+    ],
+    "productId": [
+      6801
+    ],
+    "zwaveAllianceProductId": 3779,
+    "associationGroups": [
+      1
+    ],
+    "multiChannelNodes": {
+      "2": {
+        "class": "light",
+        "capabilities": [
+          "onoff"
+        ],
+        "icon": "{{driverAssetsPath}}/icon.svg",
+        "name": {
+          "en": "Output 2",
+          "nl": "Uitgang 2",
+          "de": "Ausgang 2"
+        },
+        "settings": []
+      }
+    },
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Press the top left button on your {{driverNameEn}} three times within a second.",
+        "nl": "Druk driemaal binnen een seconde op de knop linksboven van uw {{driverNameNl}}.",
+        "de": "Drücken Sie die linkere obere Taste auf Ihrem {{DriverNameDe}} dreimal innerhalb einer Sekunde."
+      }
+    },
+    "unlearnmode": {
+			"instruction": {
+        "en": "Hold the bottom left button for at least 10 seconds, the LED should light up red.",
+        "nl": "Houd de knop linksonder ingedrukt voor minstens 10 seconden. De LED brand nu rood.",
+        "de": "Halten Sie die linkere untere Taste mindestens 10 Sekunden lang gedrückt. Die LED sollte rot leuchten."
+      }
+    },
+    "associationGroupsOptions": {
+      "1": {
+        "hint": {
+          "en": "The lifeline group reports the device's status.",
+          "nl": "De lifeline groep rapporteert de status van het apparaat.",
+          "de": "Die lifelinfe gruppe meldet den Status des Geräts."
+        }
+      }
+    }
+  }
+}

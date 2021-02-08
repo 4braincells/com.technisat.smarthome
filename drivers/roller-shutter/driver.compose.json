@@ -1,16 +1,13 @@
 {
-  "id": "wall-dimmer",
+  "id": "roller-shutter",
   "name": {
-    "en": "Wall Dimmer",
-    "nl": "Wanddimmer",
-    "de": "Dimmer"
+    "en": "Roller shutter",
+    "nl": "Rolluik schakelaar",
+    "de": "Rollladenschalter"
   },
-  "class": "light",
+  "class": "windowcoverings",
   "capabilities": [
-    "dim",
-    "measure_power",
-    "meter_power",
-    "onoff"
+    "windowcoverings_set"
   ],
   "images": {
     "large": "{{driverAssetsPath}}/images/large.png",
@@ -19,12 +16,12 @@
   "zwave": {
     "manufacturerId": 665,
     "productTypeId": [
-      4
+      5
     ],
     "productId": [
-      6802
+      6803
     ],
-    "zwaveAllianceProductId": 3798,
+    "zwaveAllianceProductId": 3778,
     "associationGroups": [
       1
     ],

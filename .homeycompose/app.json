@@ -1,6 +1,6 @@
 {
   "id": "com.technisat.smarthome",
-  "version": "1.1.1",
+  "version": "1.3.0",
   "compatibility": ">=4.2.0",
   "sdk": 2,
   "name": {

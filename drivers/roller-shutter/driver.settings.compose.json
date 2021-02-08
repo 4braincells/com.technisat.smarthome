@@ -1,0 +1,90 @@
+[
+  {
+    "id": "central_scenes",
+    "value": 1,
+    "label": {
+      "en": "Central scene notifications",
+      "nl": "Centrale scenes",
+      "de": "Zentrale Szenen"
+    },
+    "hint": {
+      "en": "Enable/disable central scene notifications for 2x-5x button presses.",
+      "nl": "Zet centrale scene notificaties aan voor 2-5 knop drukken.",
+      "de": "Aktiviert/Deaktiviert Zentrale Szenen Benachrichtigung für 2x-5x faches drücken."
+    },
+    "zwave": {
+      "index": 1,
+      "size": 1
+    },
+    "attr": {
+      "min": 0,
+      "max": 1
+    },
+    "type": "number"
+  },
+  {
+    "id": "current_report",
+    "value": 3,
+    "attr": {
+      "min": 3,
+      "max": 8640 
+    },
+    "label": {
+      "en": "Current report interval",
+      "nl": "Stroom meting rapportage",
+      "de": "Stromverbrauch-Meldung Intervall"
+    },
+    "hint": {
+      "en": "Interval of current power meter reports in 10 seconds increments.",
+      "nl": "Interval van periodieke rapportage van het opgenomen vermogen . In stappen van 10 seconden.",
+      "de": "Intervall der aktuellen Stromverbrauch-Meldung. Wert in 10 sekunden."
+    },
+    "zwave": {
+      "index": 2,
+      "size": 2
+    },
+    "type": "number"
+  },
+  {
+    "id": "power_report",
+    "value": 60,
+    "attr": {
+      "min": 0,
+      "max": 30240 
+    },
+    "label": {
+      "en": "Power report interval",
+      "nl": "Energie meting rapportage",
+      "de": "Energieverbrauch-Meldung Intervall"
+    },
+    "hint": {
+      "en": "Interval of active energy meter reports in minutes. Value in minutes.",
+      "nl": "Interval van periodieke rapportage van het energieverbruik. Waarde in minuten.",
+      "de": "Intervall der aktuellen Energieverbrauch-Meldung. Wert in minuten."
+    },
+    "zwave": {
+      "index": 3,
+      "size": 2
+    },
+    "type": "number"
+  },
+  {
+    "id": "start_calibration",
+    "value": false,
+    "label": {
+      "en": "Calibration",
+      "nl": "Kalibratie",
+      "de": "Kalibration"
+    },
+    "hint": {
+      "en": "Manual shutter calibration - shutter will move up, down and up again.",
+      "nl": "Handmatige calibratie - Rolluik zal open, dicht en weer open gaan.",
+      "de": "Manuelle Verschlusskalibrierung - Der Verschluss bewegt sich nach oben, unten und wieder nach oben."
+    },
+    "zwave": {
+      "index": 4,
+      "size": 1
+    },
+    "type": "checkbox"
+  }
+]
