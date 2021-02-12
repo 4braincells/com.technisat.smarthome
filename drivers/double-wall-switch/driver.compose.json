@@ -28,7 +28,7 @@
       1
     ],
     "multiChannelNodes": {
-      "2": {
+      "3": {
         "class": "light",
         "capabilities": [
           "onoff"

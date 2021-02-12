@@ -6,6 +6,7 @@ class DoubleSwitch extends ZwaveDevice {
 
 	async onMeshInit() {
 		this.enableDebug();
+		this.printNode();
 
 		this.log('DoubleSwitch has been inited');
 
