@@ -20,5 +20,9 @@
   "1.3.1" : {
     "en": "Small changes and more logging for double switch.",
     "nl": "Wijzingen en meer logging voor de dubbele wand schakelaar."
+  },
+  "1.3.2" : {
+    "en": "Changed node setup for double switch.",
+    "nl": "Nodes van dubbele wand schakelaar gewijzigd."
   }
 }

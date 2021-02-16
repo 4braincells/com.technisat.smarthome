@@ -28,7 +28,20 @@
       1
     ],
     "multiChannelNodes": {
-      "3": {
+      "1": {
+        "class": "light",
+        "capabilities": [
+          "onoff"
+        ],
+        "icon": "{{driverAssetsPath}}/icon.svg",
+        "name": {
+          "en": "Output 1",
+          "nl": "Uitgang 1",
+          "de": "Ausgang 1"
+        },
+        "settings": []
+      },
+      "2": {
         "class": "light",
         "capabilities": [
           "onoff"

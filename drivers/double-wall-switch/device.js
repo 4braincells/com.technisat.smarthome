@@ -10,9 +10,10 @@ class DoubleSwitch extends ZwaveDevice {
 
 		this.log('DoubleSwitch has been inited');
 
-		this.registerCapability('onoff', 'SWITCH_BINARY');
-		this.registerCapability('measure_power', 'METER');
-		this.registerCapability('meter_power', 'METER');
+		this.registerCapability('onoff', 'BASIC');
+		// Disable these command classes during testing for the multi channel nodes
+		//this.registerCapability('measure_power', 'METER');
+		//this.registerCapability('meter_power', 'METER');
 	}
 
 }
