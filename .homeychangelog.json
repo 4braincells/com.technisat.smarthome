@@ -28,5 +28,9 @@
   "1.3.3" : {
     "en": "Only use multichannel nodes for double switch.",
     "nl": "Nodes van dubbele wand schakelaar gewijzigd."
+  },
+  "1.3.4" : {
+    "en": "Double switch: revert multichannel nodes and change power reporting.",
+    "nl": "Dubbele wand schakelaar: nodes teruggezet naar vorige versie en vermogensrapportage aangepast."
   }
 }
