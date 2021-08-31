@@ -1,13 +1,13 @@
 'use strict';
 
-const { ZwaveDevice } = require('homey-meshdriver');
+const { ZwaveDevice } = require('homey-zwavedriver');
 
 class RollerShutterDevice extends ZwaveDevice {
 
-	onMeshInit() {
-		this.log('RollerShutter has been inited');
-
+	async onNodeInit() {
 		this.enableDebug();
+
+		this.log('RollerShutter has been inited');
 
 		this.registerCapability('windowcoverings_set', 'SWITCH_MULTILEVEL');
 

@@ -1,10 +1,10 @@
 'use strict';
 
-const { ZwaveDevice } = require('homey-meshdriver');
+const { ZwaveDevice } = require('homey-zwavedriver');
 
 class SingleSwitch extends ZwaveDevice {
 
-	async onMeshInit() {
+	async onNodeInit() {
 		this.enableDebug();
 
 		this.log('SingleSwitch has been inited');

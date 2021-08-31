@@ -1,10 +1,10 @@
 'use strict';
 
-const { ZwaveDevice } = require('homey-meshdriver');
+const { ZwaveDevice } = require('homey-zwavedriver');
 
 class Dimmer extends ZwaveDevice {
 
-	async onMeshInit() {
+	async onNodeInit() {
 		this.enableDebug();
 
 		this.log('Dimmer has been inited');
