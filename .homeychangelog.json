@@ -40,5 +40,9 @@
   "1.4.0" : {
     "en": "Update to SDK v3.",
     "nl": "Geupdate naar SDK v3."
+  },
+  "1.4.1" : {
+    "en": "Revert double switch to old implementation.",
+    "nl": "De implementatie voor de dubbele schakelaar terugzet."
   }
 }
