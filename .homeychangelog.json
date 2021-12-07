@@ -44,5 +44,9 @@
   "1.4.1" : {
     "en": "Revert double switch to old implementation.",
     "nl": "De implementatie voor de dubbele schakelaar terugzet."
+  },
+  "1.4.2" : {
+    "en": "New implementation for Double Switch.",
+    "nl": "Nieuwe implementatie voor de dubbele schakelaar."
   }
 }
