@@ -7,7 +7,8 @@
   },
   "class": "light",
   "capabilities": [
-    "onoff",
+    "onoff.output1",
+    "onoff.output2",
     "measure_power",
     "meter_power"
   ],
@@ -24,9 +25,8 @@
       6801
     ],
     "zwaveAllianceProductId": 3779,
-    "associationGroups": [
-      1
-    ],
+    "associationGroups": [ 1 ],
+    "associationGroupsMultiChannel": [ 2 ],
     "multiChannelNodes": {
       "1": {
         "class": "light",
@@ -44,7 +44,7 @@
       "2": {
         "class": "light",
         "capabilities": [
-          "onoff"
+          "onoff.output2"
         ],
         "icon": "{{driverAssetsPath}}/icon.svg",
         "name": {
