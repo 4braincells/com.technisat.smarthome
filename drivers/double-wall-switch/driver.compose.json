@@ -31,7 +31,7 @@
       "1": {
         "class": "light",
         "capabilities": [
-          "onoff"
+          "onoff.output1"
         ],
         "icon": "{{driverAssetsPath}}/icon.svg",
         "name": {

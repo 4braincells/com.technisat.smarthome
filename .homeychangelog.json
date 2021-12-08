@@ -48,5 +48,9 @@
   "1.4.2" : {
     "en": "New implementation for Double Switch.",
     "nl": "Nieuwe implementatie voor de dubbele schakelaar."
+  },
+  "1.4.3": {
+    "en": "Fixed a bug for output 1 capability.",
+    "nl": "Fout opgelost voor de capability op uitgang 1."
   }
 }

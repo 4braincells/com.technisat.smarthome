@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.technisat.smarthome",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "name": {
@@ -62,7 +62,7 @@
           "1": {
             "class": "light",
             "capabilities": [
-              "onoff"
+              "onoff.output1"
             ],
             "icon": "/drivers/double-wall-switch/assets/icon.svg",
             "name": {
