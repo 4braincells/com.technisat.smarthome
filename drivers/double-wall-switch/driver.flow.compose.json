@@ -1,0 +1,106 @@
+{
+  "actions": [
+    {
+      "id": "double_switch_turn_on",
+      "title": {
+        "en": "Turn on",
+        "nl": "Zet aan"
+      },
+      "titleFormatted": {
+        "en": "Turn on [[output]]",
+        "nl": "Zet uitgang [[output]] aan",
+        "de": "Schaltet ausgang [[output]] ein"
+      },
+      "args": [
+        {
+          "name": "output",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "Output 1",
+                "nl": "Uitgang 1"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Output 2",
+                "nl": "Uitgang 2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "double_switch_turn_off",
+      "title": {
+        "en": "Turn off",
+        "nl": "Zet uit"
+      },
+      "titleFormatted": {
+        "en": "Turn off [[output]]",
+        "nl": "Zet uitgang [[output]] uit",
+        "de": "Schaltet ausgang [[output]] aus"
+      },
+      "args": [
+        {
+          "name": "output",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "Output 1",
+                "nl": "Uitgang 1"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Output 2",
+                "nl": "Uitgang 2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "double_switch_toggle",
+      "title": {
+        "en": "Toggle on or off",
+        "nl": "Zet aan of uit"
+      },
+      "titleFormatted": {
+        "en": "Turn on or off  [[output]]",
+        "nl": "Zet uitgang [[output]] aan of uit",
+        "de": "Schaltet ausgang [[output]] ein oder aus"
+      },
+      "args": [
+        {
+          "name": "output",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "Output 1",
+                "nl": "Uitgang 1"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Output 2",
+                "nl": "Uitgang 2"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

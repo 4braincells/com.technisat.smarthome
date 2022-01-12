@@ -1,6 +1,6 @@
 {
   "id": "com.technisat.smarthome",
-  "version": "1.4.3",
+  "version": "1.4.5",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "name": {
@@ -22,5 +22,13 @@
   "author": {
     "name": "Kaalus",
     "email": "homey@kaalus.nl"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Christian Röring",
+        "email": "christian@athom.nl"
+      }
+    ]
   }
 }

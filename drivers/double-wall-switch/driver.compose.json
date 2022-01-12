@@ -9,52 +9,62 @@
   "capabilities": [
     "onoff.output1",
     "onoff.output2",
-    "measure_power",
-    "meter_power"
+    "measure_power.output1",
+    "meter_power.output1",
+    "measure_power.output2",
+    "meter_power.output2"
   ],
+  "capabilitiesOptions": {
+    "onoff.output1": {
+      "title": {
+        "en": "Output 1",
+        "nl": "Uitgang 1",
+        "de": "Ausgang 1"
+      }
+    },
+    "onoff.output2": {
+      "title": {
+        "en": "Output 2",
+        "nl": "Uitgang 2",
+        "de": "Ausgang 2"
+      }
+    },
+    "measure_power.output1": {
+      "title": {
+        "en": "Power - Output 1",
+        "nl": "Energie - Uitgang 1"
+      }
+    },
+    "meter_power.output1": {
+      "title": {
+        "en": "Power meter - Output 1",
+        "nl": "Energiemeter - Uitgang 1"
+      }
+    },
+    "measure_power.output2": {
+      "title": {
+        "en": "Power - Output 2",
+        "nl": "Energie - Uitgang 2"
+      }
+    },
+    "meter_power.output2": {
+      "title": {
+        "en": "Power meter - Output 2",
+        "nl": "Energiemeter - Uitgang 2"
+      }
+    }
+  },
   "images": {
     "large": "{{driverAssetsPath}}/images/large.png",
     "small": "{{driverAssetsPath}}/images/small.png"
   },
   "zwave": {
     "manufacturerId": 665,
-    "productTypeId": [
-      3
-    ],
-    "productId": [
-      6801
-    ],
+    "productTypeId": [ 3 ],
+    "productId": [ 6801 ],
     "zwaveAllianceProductId": 3779,
-    "associationGroups": [ 1 ],
-    "associationGroupsMultiChannel": [ 2 ],
-    "multiChannelNodes": {
-      "1": {
-        "class": "light",
-        "capabilities": [
-          "onoff.output1"
-        ],
-        "icon": "{{driverAssetsPath}}/icon.svg",
-        "name": {
-          "en": "Output 1",
-          "nl": "Uitgang 1",
-          "de": "Ausgang 1"
-        },
-        "settings": []
-      },
-      "2": {
-        "class": "light",
-        "capabilities": [
-          "onoff.output2"
-        ],
-        "icon": "{{driverAssetsPath}}/icon.svg",
-        "name": {
-          "en": "Output 2",
-          "nl": "Uitgang 2",
-          "de": "Ausgang 2"
-        },
-        "settings": []
-      }
-    },
+    "associationGroups": [],
+    "associationGroupsMultiChannel": [ 1 ],
     "learnmode": {
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
@@ -65,9 +75,9 @@
     },
     "unlearnmode": {
 			"instruction": {
-        "en": "Hold the bottom left button for at least 10 seconds, the LED should light up red.",
-        "nl": "Houd de knop linksonder ingedrukt voor minstens 10 seconden. De LED brand nu rood.",
-        "de": "Halten Sie die linkere untere Taste mindestens 10 Sekunden lang gedrückt. Die LED sollte rot leuchten."
+        "en": "Hold the top left button for at least 10 seconds, the LED should light up red.",
+        "nl": "Houd de knop linksboven ingedrukt voor minstens 10 seconden. De LED brand nu rood.",
+        "de": "Halten Sie die linkere obere Taste mindestens 10 Sekunden lang gedrückt. Die LED sollte rot leuchten."
       }
     },
     "associationGroupsOptions": {

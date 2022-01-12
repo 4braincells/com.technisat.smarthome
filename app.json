@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.technisat.smarthome",
-  "version": "1.4.3",
+  "version": "1.4.5",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "name": {
@@ -24,6 +24,135 @@
     "name": "Kaalus",
     "email": "homey@kaalus.nl"
   },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Christian Röring",
+        "email": "christian@athom.nl"
+      }
+    ]
+  },
+  "flow": {
+    "actions": [
+      {
+        "id": "double_switch_turn_on",
+        "title": {
+          "en": "Turn on",
+          "nl": "Zet aan"
+        },
+        "titleFormatted": {
+          "en": "Turn on [[output]]",
+          "nl": "Zet uitgang [[output]] aan",
+          "de": "Schaltet ausgang [[output]] ein"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=double-wall-switch"
+          },
+          {
+            "name": "output",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Output 1",
+                  "nl": "Uitgang 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Output 2",
+                  "nl": "Uitgang 2"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "double_switch_turn_off",
+        "title": {
+          "en": "Turn off",
+          "nl": "Zet uit"
+        },
+        "titleFormatted": {
+          "en": "Turn off [[output]]",
+          "nl": "Zet uitgang [[output]] uit",
+          "de": "Schaltet ausgang [[output]] aus"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=double-wall-switch"
+          },
+          {
+            "name": "output",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Output 1",
+                  "nl": "Uitgang 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Output 2",
+                  "nl": "Uitgang 2"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "double_switch_toggle",
+        "title": {
+          "en": "Toggle on or off",
+          "nl": "Zet aan of uit"
+        },
+        "titleFormatted": {
+          "en": "Turn on or off  [[output]]",
+          "nl": "Zet uitgang [[output]] aan of uit",
+          "de": "Schaltet ausgang [[output]] ein oder aus"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=double-wall-switch"
+          },
+          {
+            "name": "output",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Output 1",
+                  "nl": "Uitgang 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Output 2",
+                  "nl": "Uitgang 2"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "drivers": [
     {
       "id": "double-wall-switch",
@@ -36,9 +165,51 @@
       "capabilities": [
         "onoff.output1",
         "onoff.output2",
-        "measure_power",
-        "meter_power"
+        "measure_power.output1",
+        "meter_power.output1",
+        "measure_power.output2",
+        "meter_power.output2"
       ],
+      "capabilitiesOptions": {
+        "onoff.output1": {
+          "title": {
+            "en": "Output 1",
+            "nl": "Uitgang 1",
+            "de": "Ausgang 1"
+          }
+        },
+        "onoff.output2": {
+          "title": {
+            "en": "Output 2",
+            "nl": "Uitgang 2",
+            "de": "Ausgang 2"
+          }
+        },
+        "measure_power.output1": {
+          "title": {
+            "en": "Power - Output 1",
+            "nl": "Energie - Uitgang 1"
+          }
+        },
+        "meter_power.output1": {
+          "title": {
+            "en": "Power meter - Output 1",
+            "nl": "Energiemeter - Uitgang 1"
+          }
+        },
+        "measure_power.output2": {
+          "title": {
+            "en": "Power - Output 2",
+            "nl": "Energie - Uitgang 2"
+          }
+        },
+        "meter_power.output2": {
+          "title": {
+            "en": "Power meter - Output 2",
+            "nl": "Energiemeter - Uitgang 2"
+          }
+        }
+      },
       "images": {
         "large": "/drivers/double-wall-switch/assets/images/large.png",
         "small": "/drivers/double-wall-switch/assets/images/small.png"
@@ -52,40 +223,10 @@
           6801
         ],
         "zwaveAllianceProductId": 3779,
-        "associationGroups": [
+        "associationGroups": [],
+        "associationGroupsMultiChannel": [
           1
         ],
-        "associationGroupsMultiChannel": [
-          2
-        ],
-        "multiChannelNodes": {
-          "1": {
-            "class": "light",
-            "capabilities": [
-              "onoff.output1"
-            ],
-            "icon": "/drivers/double-wall-switch/assets/icon.svg",
-            "name": {
-              "en": "Output 1",
-              "nl": "Uitgang 1",
-              "de": "Ausgang 1"
-            },
-            "settings": []
-          },
-          "2": {
-            "class": "light",
-            "capabilities": [
-              "onoff.output2"
-            ],
-            "icon": "/drivers/double-wall-switch/assets/icon.svg",
-            "name": {
-              "en": "Output 2",
-              "nl": "Uitgang 2",
-              "de": "Ausgang 2"
-            },
-            "settings": []
-          }
-        },
         "learnmode": {
           "image": "/drivers/double-wall-switch/assets/learnmode.svg",
           "instruction": {
@@ -96,9 +237,9 @@
         },
         "unlearnmode": {
           "instruction": {
-            "en": "Hold the bottom left button for at least 10 seconds, the LED should light up red.",
-            "nl": "Houd de knop linksonder ingedrukt voor minstens 10 seconden. De LED brand nu rood.",
-            "de": "Halten Sie die linkere untere Taste mindestens 10 Sekunden lang gedrückt. Die LED sollte rot leuchten."
+            "en": "Hold the top left button for at least 10 seconds, the LED should light up red.",
+            "nl": "Houd de knop linksboven ingedrukt voor minstens 10 seconden. De LED brand nu rood.",
+            "de": "Halten Sie die linkere obere Taste mindestens 10 Sekunden lang gedrückt. Die LED sollte rot leuchten."
           }
         },
         "associationGroupsOptions": {

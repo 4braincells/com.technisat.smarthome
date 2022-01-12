@@ -52,5 +52,13 @@
   "1.4.3": {
     "en": "Fixed a bug for output 1 capability.",
     "nl": "Fout opgelost voor de capability op uitgang 1."
+  },
+  "1.4.4": {
+    "en": "Finialized new implementation for double switch.",
+    "nl": "Nieuwe implementatie voor dubbele schakelaar afgerond."
+  },
+  "1.4.5": {
+    "en": "Add output Flows for double switch.",
+    "nl": "Flows toegevoegd om dubbele schakelaar te schakelen."
   }
 }
