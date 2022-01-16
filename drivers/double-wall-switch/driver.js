@@ -6,6 +6,27 @@ class DoubleSwitchDriver extends Homey.Driver {
     onInit() {
         super.onInit();
 
+        // Flow triggers
+        this.turnedOnFlow = this.homey.flow.getDeviceTriggerCard('double_switch_turned_on');
+        this.turnedOnFlow.registerRunListener((args, state) => {
+            return args.output == state.output; 
+        });
+		this.turnedOffFlow = this.homey.flow.getDeviceTriggerCard('double_switch_turned_off');
+        this.turnedOffFlow.registerRunListener((args, state) => {
+            return args.output == state.output; 
+        });
+		this.toggledFlow = this.homey.flow.getDeviceTriggerCard('double_switch_toggled');
+        this.toggledFlow.registerRunListener((args, state) => {
+            return args.output == state.output;
+        });
+
+        // Flow conditions
+        this.isTurnedOnFlow = this.homey.flow.getConditionCard('double_switch_is_turned_on');
+        this.isTurnedOnFlow.registerRunListener((args, state) => {
+            return args.state == state.output && args.device.getCapabilityValue(`onoff.output${args.output}`) == true;
+        });
+
+        // Flow actions
         this.outputOnAction = this.homey.flow.getActionCard('double_switch_turn_on');
         this.outputOnAction.registerRunListener((args, state) => {
             return args.device.setOutputRunListener(args, state, true);
@@ -22,6 +43,15 @@ class DoubleSwitchDriver extends Homey.Driver {
                 !args.device.getCapabilityValue(`onoff.output${args.output}`));
         });
     }
+
+    async outputFlowTriggerListener(device, output, value) {
+		this.toggledFlow.trigger(device, {}, { output });
+		if (value) {
+			this.turnedOnFlow.trigger(device, {}, { output });
+		} else {
+			this.turnedOffFlow.trigger(device, {}, { output });
+		}
+	}
 
 }
 
