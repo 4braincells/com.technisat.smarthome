@@ -55,6 +55,22 @@ class DoubleSwitch extends ZwaveDevice {
 		// this.registerCapability('meter_power', 'METER');
 		// this.registerCapability('measure_power', 'METER');
 	}
+
+	// Handle custom flow card logic
+	async setOutputRunListener(args, state, value) {
+		if (!args.output) return new Error('Missing arguments');
+		const output = Number(args.output);
+
+		if (output === 1) {
+			this.setCapabilityValue('onoff.output1', value);
+			return this._setCapabilityValue('onoff.output1', 'SWITCH_BINARY', value);
+		}
+		if (output === 2) {
+			this.setCapabilityValue('onoff.output2', value);
+			return this._setCapabilityValue('onoff.output2', 'SWITCH_BINARY', value);
+		}
+		return new Error('Incorrect output');
+	}
 }
 
 module.exports = DoubleSwitch;

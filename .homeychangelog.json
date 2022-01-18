@@ -64,5 +64,9 @@
   "1.4.6": {
     "en": "Add trigger and condition Flows for double switch.",
     "nl": "Trigger en voorwaarde Flows toegevoegd voor dubbele schakelaar."
+  },
+  "1.4.7": {
+    "en": "Fixed output Flows for double switch.",
+    "nl": "Uitgang Flows van dubbele schakelaar hersteld."
   }
 }
