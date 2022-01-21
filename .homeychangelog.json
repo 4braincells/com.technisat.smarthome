@@ -16,5 +16,57 @@
     "en": "Added Rollershutter.",
     "nl": "Rolluikschakelaar toegevoegd.",
     "de": "Rollladenschalter hinzugefügt."
+  },
+  "1.3.1" : {
+    "en": "Small changes and more logging for double switch.",
+    "nl": "Wijzingen en meer logging voor de dubbele wand schakelaar."
+  },
+  "1.3.2" : {
+    "en": "Changed node setup for double switch.",
+    "nl": "Nodes van dubbele wand schakelaar gewijzigd."
+  },
+  "1.3.3" : {
+    "en": "Only use multichannel nodes for double switch.",
+    "nl": "Nodes van dubbele wand schakelaar gewijzigd."
+  },
+  "1.3.4" : {
+    "en": "Double switch: revert multichannel nodes and change power reporting.",
+    "nl": "Dubbele wand schakelaar: nodes teruggezet naar vorige versie en vermogensrapportage aangepast."
+  },
+  "1.3.5" : {
+    "en": "Dimmer: Fix on/off capability.",
+    "nl": "Dimmer: Aan/uit werkt weer correct."
+  },
+  "1.4.0" : {
+    "en": "Update to SDK v3.",
+    "nl": "Geupdate naar SDK v3."
+  },
+  "1.4.1" : {
+    "en": "Revert double switch to old implementation.",
+    "nl": "De implementatie voor de dubbele schakelaar terugzet."
+  },
+  "1.4.2" : {
+    "en": "New implementation for Double Switch.",
+    "nl": "Nieuwe implementatie voor de dubbele schakelaar."
+  },
+  "1.4.3": {
+    "en": "Fixed a bug for output 1 capability.",
+    "nl": "Fout opgelost voor de capability op uitgang 1."
+  },
+  "1.4.4": {
+    "en": "Finialized new implementation for double switch.",
+    "nl": "Nieuwe implementatie voor dubbele schakelaar afgerond."
+  },
+  "1.4.5": {
+    "en": "Add output Flows for double switch.",
+    "nl": "Flows toegevoegd om dubbele schakelaar te schakelen."
+  },
+  "1.4.6": {
+    "en": "Add trigger and condition Flows for double switch.",
+    "nl": "Trigger en voorwaarde Flows toegevoegd voor dubbele schakelaar."
+  },
+  "1.4.7": {
+    "en": "Fixed output Flows for double switch.",
+    "nl": "Uitgang Flows van dubbele schakelaar hersteld."
   }
 }
