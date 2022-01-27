@@ -1,6 +1,6 @@
 {
   "id": "com.technisat.smarthome",
-  "version": "1.4.7",
+  "version": "1.4.8",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "name": {
@@ -8,7 +8,8 @@
   },
   "brandColor": "#009EF3",
   "description": {
-    "en": "Technisat SmartHome - versatile and simple"
+    "en": "Automate your home whilst using your existing switches - versatile and simple",
+    "nl":"Automatiseer je huis gebruikmakend van je bestaande schakelmateriaal - veelzijdig en eenvoudig "
   },
   "category": [
     "lights",

@@ -68,5 +68,9 @@
   "1.4.7": {
     "en": "Fixed output Flows for double switch.",
     "nl": "Uitgang Flows van dubbele schakelaar hersteld."
+  },
+  "1.4.8": {
+    "en": "Updated app descriptions, fixed a typo.",
+    "nl": "App beschrijving bijgewerkt."
   }
 }
