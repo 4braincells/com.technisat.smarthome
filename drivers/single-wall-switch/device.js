@@ -9,8 +9,17 @@ class SingleSwitch extends ZwaveDevice {
 
 		this.log('SingleSwitch has been inited');
 
+		// Get the measure_power poll setting
+		var powerSetting = this.getSetting('current_report');
+		powerSetting *= 10000; // * 10 (seconds due device format) * 1000ms (1 second)
+
 		this.registerCapability('onoff', 'SWITCH_BINARY');
-		this.registerCapability('measure_power', 'METER');
+		this.registerCapability('measure_power', 'METER', {
+			getOpts: {
+				getOnStart: true,
+				pollInterval: powerSetting,
+			}
+		});
 		this.registerCapability('meter_power', 'METER');
 
 		this.registerReportListener('CENTRAL_SCENE', 'CENTRAL_SCENE_NOTIFICATION', report => {
@@ -27,7 +36,6 @@ class SingleSwitch extends ZwaveDevice {
 			}
 		});
 	}
-
 }
 
 module.exports = SingleSwitch;

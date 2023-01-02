@@ -6,7 +6,6 @@ class DoubleSwitch extends ZwaveDevice {
 
 	async onNodeInit() {
 		this.enableDebug();
-		// this.printNode();
 
 		this.log('DoubleSwitch has been inited');
 
@@ -46,8 +45,24 @@ class DoubleSwitch extends ZwaveDevice {
 			multiChannelNodeId: 2
 		});
 
-		this.registerCapability('measure_power.output1', 'METER', { multiChannelNodeId: 1 });
-		this.registerCapability('measure_power.output2', 'METER', { multiChannelNodeId: 2 });
+		// Get the measure_power poll setting
+		var powerSetting = this.getSetting('current_report');
+		powerSetting *= 10000; // * 10 (seconds due device format) * 1000ms (1 second)
+
+		this.registerCapability('measure_power.output1', 'METER', {
+			multiChannelNodeId: 1,
+			getOpts: {
+				getOnStart: true,
+				pollInterval: powerSetting,
+			}
+		});
+		this.registerCapability('measure_power.output2', 'METER', {
+			multiChannelNodeId: 2,
+			getOpts: {
+				getOnStart: true,
+				pollInterval: powerSetting,
+			}
+		});
 		this.registerCapability('meter_power.output1', 'METER', { multiChannelNodeId: 1 });
 		this.registerCapability('meter_power.output2', 'METER', { multiChannelNodeId: 2 });
 
