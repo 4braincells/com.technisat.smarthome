@@ -51,9 +51,19 @@ class DoubleSwitch extends ZwaveDevice {
 		this.registerCapability('meter_power.output1', 'METER', { multiChannelNodeId: 1 });
 		this.registerCapability('meter_power.output2', 'METER', { multiChannelNodeId: 2 });
 
-		// Disable these command classes during testing for the multi channel
-		// this.registerCapability('meter_power', 'METER');
-		// this.registerCapability('measure_power', 'METER');
+		this.registerReportListener('CENTRAL_SCENE', 'CENTRAL_SCENE_NOTIFICATION', report => {
+			if (report.hasOwnProperty('Properties1')
+                && report.Properties1.hasOwnProperty('Key Attributes')
+                && report.hasOwnProperty('Scene Number')) {
+					// Build state from the report. Parse the count from the text "Key pressed 'n' times"
+					const state = {
+						button: report['Scene Number'],
+						clickcount: report.Properties1['Key Attributes'].match(/\d+/)[0],
+					};
+
+					this.driver.sceneTrigger.trigger(this, null, state);
+			}
+		});
 	}
 
 	// Handle custom flow card logic

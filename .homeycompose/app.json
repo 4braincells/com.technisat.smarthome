@@ -1,6 +1,6 @@
 {
   "id": "com.technisat.smarthome",
-  "version": "1.4.8",
+  "version": "1.5.0",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "name": {
@@ -9,7 +9,7 @@
   "brandColor": "#009EF3",
   "description": {
     "en": "Automate your home whilst using your existing switches - versatile and simple",
-    "nl":"Automatiseer je huis gebruikmakend van je bestaande schakelmateriaal - veelzijdig en eenvoudig "
+    "nl": "Automatiseer je huis gebruikmakend van je bestaande schakelmateriaal - veelzijdig en eenvoudig "
   },
   "category": [
     "lights",
@@ -31,5 +31,8 @@
         "email": "christian@athom.nl"
       }
     ]
-  }
+  },
+  "platforms": [
+    "local"
+  ]
 }

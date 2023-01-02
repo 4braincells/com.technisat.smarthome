@@ -1,0 +1,70 @@
+{
+  "triggers": [
+    {
+      "id": "roller_shutter_scenes",
+      "title": {
+        "en": "Central scenes",
+        "nl": "Scenes",
+        "de": "Szenen"
+      },
+      "titleFormatted": {
+        "en": "Button [[button]] is clicked [[clickcount]] times",
+        "nl": "Knop [[button]] is [[clickcount]] ingedrukt",
+        "de": "Taste [[button]] ist [[clickcount]] gedrückt"
+      },
+      "args": [
+        {
+          "name": "button",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "Top left button",
+                "nl": "Bovenste knop links",
+                "de": "Obere Taste links"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Bottom left button",
+                "nl": "Onderste knop links",
+                "de": "Untere Taste links"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "Top right button",
+                "nl": "Bovenste knop rechts",
+                "de": "Obere Taste rechts"
+              }
+            },
+            {
+              "id": "4",
+              "label": {
+                "en": "Bottom right button",
+                "nl": "Onderste knop rechts",
+                "de": "Untere Taste rechts"
+              }
+            }
+          ]
+        },
+        {
+          "name": "clickcount",
+          "type": "number",
+          "title": {
+            "en": "Times pressed",
+            "nl": "Aantal keer ingedrukt",
+            "de": "Wie oft gedrückt"
+          },
+          "placeholder" : "2-5",
+          "min": 2,
+          "max": 5,
+          "step": 1
+        }
+      ]
+    }
+  ]
+}

@@ -72,5 +72,9 @@
   "1.4.8": {
     "en": "Updated app descriptions, fixed a typo.",
     "nl": "App beschrijving bijgewerkt."
+  },
+  "1.5.0": {
+    "en": "Added scenes for all devices. Fixed unpairing instructions.",
+    "nl": "Ondersteuning voor scenes op alle apparaten toegevoegd. Instructies voor ontkoppelen gecorrigeerd."
   }
 }

@@ -37,9 +37,9 @@
     },
     "unlearnmode": {
 			"instruction": {
-        "en": "Hold the bottom button for at least 10 seconds, the LED should light up red.",
-        "nl": "Houd de onderste knop ingedrukt voor minstens 10 seconden. De LED brand nu rood.",
-        "de": "Halten Sie die untere Taste mindestens 10 Sekunden lang gedrückt. Die LED sollte rot leuchten."
+        "en": "Hold the top button for at least 10 seconds, the LED should light up red.",
+        "nl": "Houd de bovenste knop ingedrukt voor minstens 10 seconden. De LED brand nu rood.",
+        "de": "Halten Sie die obere Taste mindestens 10 Sekunden lang gedrückt. Die LED sollte rot leuchten."
       }
     },
     "associationGroupsOptions": {
@@ -47,7 +47,7 @@
         "hint": {
           "en": "The lifeline group reports the device's status.",
           "nl": "De lifeline groep rapporteert de status van het apparaat.",
-          "de": "Die lifelinfe gruppe meldet den Status des Geräts."
+          "de": "Die lifeline gruppe meldet den Status des Geräts."
         }
       }
     }

@@ -20,6 +20,12 @@ class DoubleSwitchDriver extends Homey.Driver {
             return args.output == state.output;
         });
 
+        // Scene flow triggers
+        this.sceneTrigger = this.homey.flow.getDeviceTriggerCard('double_switch_scenes');
+        this.sceneTrigger.registerRunListener((args, state) => {
+            return (args.button == state.button) && (args.clickcount == state.clickcount);
+        });
+
         // Flow conditions
         this.isTurnedOnFlow = this.homey.flow.getConditionCard('double_switch_is_turned_on');
         this.isTurnedOnFlow.registerRunListener((args, state) => {

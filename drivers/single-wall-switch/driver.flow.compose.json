@@ -1,0 +1,54 @@
+{
+  "triggers": [
+    {
+      "id": "single_switch_scenes",
+      "title": {
+        "en": "Central scenes",
+        "nl": "Scenes",
+        "de": "Szenen"
+      },
+      "titleFormatted": {
+        "en": "Button [[button]] is clicked [[clickcount]] times",
+        "nl": "Knop [[button]] is [[clickcount]] ingedrukt",
+        "de": "Taste [[button]] ist [[clickcount]] gedrückt"
+      },
+      "args": [
+        {
+          "name": "button",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "Top button",
+                "nl": "Bovenste knop",
+                "de": "Obere Taste"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Bottom button",
+                "nl": "Onderste knop",
+                "de": "Untere Taste"
+              }
+            }
+          ]
+        },
+        {
+          "name": "clickcount",
+          "type": "number",
+          "title": {
+            "en": "Times pressed",
+            "nl": "Aantal keer ingedrukt",
+            "de": "Wie oft gedrückt"
+          },
+          "placeholder" : "2-5",
+          "min": 2,
+          "max": 5,
+          "step": 1
+        }
+      ]
+    }
+  ]
+}
