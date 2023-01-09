@@ -10,6 +10,11 @@ class RollerShutterDevice extends ZwaveDevice {
 		this.log('RollerShutter has been inited');
 
 		this.registerCapability('windowcoverings_set', 'SWITCH_MULTILEVEL');
+		if(!this.hasCapability('measure_power')) this.addCapability('measure_power');
+		if(!this.hasCapability('meter_power')) this.addCapability('meter_power');
+
+		this.registerCapability('measure_power', 'METER');
+		this.registerCapability('meter_power', 'METER');
 
 		this.registerReportListener('CENTRAL_SCENE', 'CENTRAL_SCENE_NOTIFICATION', report => {
 			if (report.hasOwnProperty('Properties1')

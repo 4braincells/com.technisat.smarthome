@@ -80,5 +80,9 @@
   "1.5.1": {
     "en": "Workarround for power measure not going back to 0 watt when the device is turned off.",
     "nl": "Oplossing voor het stroomverbruik welke niet naar 0 watt gaat als het apparaat is uitgeschakelt."
+  },
+  "1.5.2": {
+    "en": "Add power capabilities for roller shutter.",
+    "nl": "Energie capabilities toegevoegd voor rolluik schakelaar."
   }
 }
