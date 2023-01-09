@@ -7,7 +7,9 @@
   },
   "class": "windowcoverings",
   "capabilities": [
-    "windowcoverings_set"
+    "windowcoverings_set",
+    "measure_power",
+    "meter_power"
   ],
   "images": {
     "large": "{{driverAssetsPath}}/images/large.png",

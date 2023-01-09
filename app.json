@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.technisat.smarthome",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "name": {
@@ -807,7 +807,9 @@
       },
       "class": "windowcoverings",
       "capabilities": [
-        "windowcoverings_set"
+        "windowcoverings_set",
+        "measure_power",
+        "meter_power"
       ],
       "images": {
         "large": "/drivers/roller-shutter/assets/images/large.png",
