@@ -84,5 +84,9 @@
   "1.5.2": {
     "en": "Add power capabilities for roller shutter.",
     "nl": "Energie capabilities toegevoegd voor rolluik schakelaar."
+  },
+  "1.5.3": {
+    "en": "Add power capability polling for roller shutter.",
+    "nl": "Energie capability polling toegevoegd voor rolluik schakelaar."
   }
 }
