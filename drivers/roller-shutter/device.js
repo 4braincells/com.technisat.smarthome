@@ -13,6 +13,10 @@ class RollerShutterDevice extends ZwaveDevice {
 		if(!this.hasCapability('measure_power')) this.addCapability('measure_power');
 		if(!this.hasCapability('meter_power')) this.addCapability('meter_power');
 
+		// Get the measure_power poll setting
+		var powerSetting = this.getSetting('current_report');
+		powerSetting *= 10000; // * 10 (seconds due device format) * 1000ms (1 second)
+
 		this.registerCapability('measure_power', 'METER', {
 			getOpts: {
 				getOnStart: true,

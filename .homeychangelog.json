@@ -88,5 +88,9 @@
   "1.5.3": {
     "en": "Add power capability polling for roller shutter.",
     "nl": "Energie capability polling toegevoegd voor rolluik schakelaar."
+  },
+  "1.5.4": {
+    "en": "Fix power usage for roller shutter.",
+    "nl": "Bug et energie meting voor rolluik schakelaar opgelost."
   }
 }
