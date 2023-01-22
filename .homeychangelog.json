@@ -96,5 +96,9 @@
   "1.5.5": {
     "en": "Added Flow card for double switch: 'is turned off'.",
     "nl": "Flow kaart toegevoegd voor de dubbele schakelaar: 'staat uit'."
+  },
+  "1.5.6": {
+    "en": "Bug fix for double switch Flow cards.",
+    "nl": "Bug opgelost voor dubbele switch Flow kaarten."
   }
 }
