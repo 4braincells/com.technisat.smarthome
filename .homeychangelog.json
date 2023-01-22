@@ -92,5 +92,9 @@
   "1.5.4": {
     "en": "Fix power usage for roller shutter.",
     "nl": "Bug et energie meting voor rolluik schakelaar opgelost."
+  },
+  "1.5.5": {
+    "en": "Added Flow card for double switch: 'is turned off'.",
+    "nl": "Flow kaart toegevoegd voor de dubbele schakelaar: 'staat uit'."
   }
 }

@@ -215,6 +215,43 @@
         ]
       }
     ]
+  },
+  {
+    "id": "double_switch_is_turned_ff",
+    "title": {
+      "en": "Is turned off",
+      "nl": "Staat uit",
+      "de": "Ist ausgeschaltet"
+    },
+    "titleFormatted": {
+      "en": "Output [[output]] is turned off",
+      "nl": "Uitgang [[output]] staat uit",
+      "de": "Ausgang [[output]] ist ausgeschaltet"
+    },
+    "args": [
+      {
+        "name": "output",
+        "type": "dropdown",
+        "values": [
+          {
+            "id": "1",
+            "label": {
+              "en": "Output 1",
+              "nl": "Uitgang 1",
+              "de": "Ausgang 1"
+            }
+          },
+          {
+            "id": "2",
+            "label": {
+              "en": "Output 2",
+              "nl": "Uitgang 2",
+              "de": "Ausgang 2"
+            }
+          }
+        ]
+      }
+    ]
   }
 ],
   "actions": [

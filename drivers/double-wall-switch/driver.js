@@ -32,6 +32,11 @@ class DoubleSwitchDriver extends Homey.Driver {
             return args.state == state.output && args.device.getCapabilityValue(`onoff.output${args.output}`) == true;
         });
 
+        this.isTurnedOffFlow = this.homey.flow.getConditionCard('double_switch_is_turned_off');
+        this.isTurnedOffFlow.registerRunListener((args, state) => {
+            return args.state == state.output && args.device.getCapabilityValue(`onoff.output${args.output}`) == false;
+        });
+
         // Flow actions
         this.outputOnAction = this.homey.flow.getActionCard('double_switch_turn_on');
         this.outputOnAction.registerRunListener((args, state) => {
