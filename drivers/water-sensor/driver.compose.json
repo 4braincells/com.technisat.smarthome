@@ -1,0 +1,36 @@
+{
+    "name": {
+        "en": "Water leak sensor",
+        "no": "Lekasjesensor",
+        "pl": "Czujnik wycieku wody"
+    },
+    "images": {
+        "small": "{{driverAssetsPath}}/images/small.jpg",
+        "large": "{{driverAssetsPath}}/images/large.jpg"
+    },
+    "platforms": ["local"],
+    "class": "sensor",
+    "capabilities": [
+        "alarm_water",
+        "alarm_tamper",
+        "alarm_battery",
+        "measure_battery"
+    ],
+    "energy": {
+        "batteries": ["CR123A"]
+    },
+    "connectivity": ["zwave"],
+    "zwave": {
+        "manufacturerId": 265,
+        "productTypeId": [8220],
+        "productId": [7171],
+        "learnmode": {
+            "image": "{{driverAssetsPath}}/learnmode.svg",
+            "instruction": {
+                "en": "Press the button inside your device three times within a second.",
+                "no": "Trykk på knappen inne i enheten tre ganger innen ett sekund.",
+                "pl": "Naciśnij przycisk wewnątrz urządzenia trzy razy w ciągu sekundy."
+            }
+        }
+    }
+}
