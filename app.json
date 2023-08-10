@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.technisat.smarthome",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "name": {
@@ -30,6 +30,10 @@
       {
         "name": "Christian Röring",
         "email": "christian@athom.nl"
+      },
+      {
+        "name": "Tymec",
+        "email": "tymek1rt@hotmail.com"
       }
     ]
   },
@@ -1510,6 +1514,56 @@
           "type": "dropdown"
         }
       ]
+    },
+    {
+      "name": {
+        "en": "Water leak sensor",
+        "nl": "Water lekkage sensor",
+        "no": "Lekasjesensor",
+        "pl": "Czujnik wycieku wody"
+      },
+      "images": {
+        "small": "/drivers/water-sensor/assets/images/small.jpg",
+        "large": "/drivers/water-sensor/assets/images/large.jpg"
+      },
+      "platforms": [
+        "local"
+      ],
+      "class": "sensor",
+      "capabilities": [
+        "alarm_water",
+        "alarm_tamper",
+        "alarm_battery",
+        "measure_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "CR123A"
+        ]
+      },
+      "connectivity": [
+        "zwave"
+      ],
+      "zwave": {
+        "manufacturerId": 265,
+        "productTypeId": [
+          8220
+        ],
+        "productId": [
+          7171
+        ],
+        "learnmode": {
+          "image": "/drivers/water-sensor/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the button inside your device three times within a second.",
+            "nl": "Druk driemaal binnen een seconde op de knop binnenin het apparaat",
+            "no": "Trykk på knappen inne i enheten tre ganger innen ett sekund.",
+            "pl": "Naciśnij przycisk wewnątrz urządzenia trzy razy w ciągu sekundy."
+          }
+        }
+      },
+      "id": "water-sensor",
+      "settings": []
     }
   ]
 }

@@ -1,6 +1,7 @@
 {
     "name": {
         "en": "Water leak sensor",
+        "nl": "Water lekkage sensor",
         "no": "Lekasjesensor",
         "pl": "Czujnik wycieku wody"
     },
@@ -28,6 +29,7 @@
             "image": "{{driverAssetsPath}}/learnmode.svg",
             "instruction": {
                 "en": "Press the button inside your device three times within a second.",
+                "nl": "Druk driemaal binnen een seconde op de knop binnenin het apparaat",
                 "no": "Trykk på knappen inne i enheten tre ganger innen ett sekund.",
                 "pl": "Naciśnij przycisk wewnątrz urządzenia trzy razy w ciągu sekundy."
             }

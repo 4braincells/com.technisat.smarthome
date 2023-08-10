@@ -100,5 +100,9 @@
   "1.5.6": {
     "en": "Bug fix for double switch Flow cards.",
     "nl": "Bug opgelost voor dubbele switch Flow kaarten."
+  },
+  "1.5.7": {
+    "en": "Add water leak sensor.",
+    "nl": "Waterlekkagesensor toegevoegd."
   }
 }

@@ -1,6 +1,6 @@
 {
   "id": "com.technisat.smarthome",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "name": {
@@ -29,6 +29,10 @@
       {
         "name": "Christian Röring",
         "email": "christian@athom.nl"
+      },
+      {
+        "name": "Tymec",
+        "email": "tymek1rt@hotmail.com"
       }
     ]
   },
