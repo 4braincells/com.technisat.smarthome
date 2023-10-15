@@ -78,7 +78,7 @@
     "nl": "Ondersteuning voor scenes op alle apparaten toegevoegd. Instructies voor ontkoppelen gecorrigeerd."
   },
   "1.5.1": {
-    "en": "Workarround for power measure not going back to 0 watt when the device is turned off.",
+    "en": "Workaround for power measure not going back to 0 watt when the device is turned off.",
     "nl": "Oplossing voor het stroomverbruik welke niet naar 0 watt gaat als het apparaat is uitgeschakelt."
   },
   "1.5.2": {
@@ -108,5 +108,10 @@
   "1.5.8": {
     "en": "Added debugging code to troubleshoot power measure issues on double switch paired to Homey Pro 2023.",
     "nl": "Code toegevoegd om de problemen met de double switch i.c.m Homey Pro 2023 te debuggen.."
+  },
+  "1.5.9": {
+    "en": "Labels and texts adapted to the roller shutter switch.",
+    "nl": "App beschrijving bijgewerkt.",
+    "de": "Beschriftungen und Texte zum Rollladenschalter angepasst."
   }
 }

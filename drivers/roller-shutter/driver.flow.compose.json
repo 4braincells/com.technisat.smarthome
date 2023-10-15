@@ -8,7 +8,7 @@
         "de": "Szenen"
       },
       "titleFormatted": {
-        "en": "Button [[button]] is clicked [[clickcount]] times",
+        "en": "Button [[button]] is pressed [[clickcount]] times",
         "nl": "Knop [[button]] is [[clickcount]] ingedrukt",
         "de": "Taste [[button]] ist [[clickcount]] gedrückt"
       },
@@ -20,33 +20,33 @@
             {
               "id": "1",
               "label": {
-                "en": "Top left button",
+                "en": "Top of left button",
                 "nl": "Bovenste knop links",
-                "de": "Obere Taste links"
+                "de": "Linke Taste oben"
               }
             },
             {
               "id": "2",
               "label": {
-                "en": "Bottom left button",
+                "en": "Bottom off left button",
                 "nl": "Onderste knop links",
-                "de": "Untere Taste links"
+                "de": "Linke Taste unten"
               }
             },
             {
               "id": "3",
               "label": {
-                "en": "Top right button",
+                "en": "Top of right button",
                 "nl": "Bovenste knop rechts",
-                "de": "Obere Taste rechts"
+                "de": "Rechte Taste oben"
               }
             },
             {
               "id": "4",
               "label": {
-                "en": "Bottom right button",
+                "en": "Bottom of right button",
                 "nl": "Onderste knop rechts",
-                "de": "Untere Taste rechts"
+                "de": "Rechte Taste unten"
               }
             }
           ]
@@ -55,9 +55,9 @@
           "name": "clickcount",
           "type": "number",
           "title": {
-            "en": "Times pressed",
+            "en": "Keypresses",
             "nl": "Aantal keer ingedrukt",
-            "de": "Wie oft gedrückt"
+            "de": "Tastendrücke"
           },
           "placeholder" : "2-5",
           "min": 2,
