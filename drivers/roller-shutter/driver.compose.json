@@ -39,7 +39,7 @@
 			"instruction": {
         "en": "Hold the top of the left button (T1) for at least 10 seconds, the LED should light up red.",
         "nl": "Houd de knop linksboven ingedrukt voor minstens 10 seconden. De LED brand nu rood.",
-        "de": "Halten Sie die linkere Taste oben (T1) mindestens 10 Sekunden lang gedrückt. Die LED sollte rot leuchten."
+        "de": "Halten Sie die linke Taste oben (T1) mindestens 10 Sekunden lang gedrückt. Die LED sollte rot leuchten."
       }
     },
     "associationGroupsOptions": {

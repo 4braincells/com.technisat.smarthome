@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "app.js",
   "devDependencies": {
-    "homey": "^2.9.3"
+    "homey": "^3.0.7"
   },
   "dependencies": {
-    "homey-zwavedriver": "^2.1.5"
+    "homey-zwavedriver": "^2.1.10"
   }
 }

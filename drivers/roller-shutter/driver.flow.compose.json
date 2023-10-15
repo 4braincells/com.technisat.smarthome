@@ -9,8 +9,8 @@
       },
       "titleFormatted": {
         "en": "Button [[button]] is pressed [[clickcount]] times",
-        "nl": "Knop [[button]] is [[clickcount]] ingedrukt",
-        "de": "Taste [[button]] ist [[clickcount]] gedrückt"
+        "nl": "Knop [[button]] is [[clickcount]] keer ingedrukt",
+        "de": "[[button]] wurde [[clickcount]] Mal gedrückt"
       },
       "args": [
         {
@@ -20,33 +20,33 @@
             {
               "id": "1",
               "label": {
-                "en": "Top of left button",
+                "en": "Left button up",
                 "nl": "Bovenste knop links",
-                "de": "Linke Taste oben"
+                "de": "Linke Taste auf"
               }
             },
             {
               "id": "2",
               "label": {
-                "en": "Bottom off left button",
+                "en": "Left button down",
                 "nl": "Onderste knop links",
-                "de": "Linke Taste unten"
+                "de": "Linke Taste ab"
               }
             },
             {
               "id": "3",
               "label": {
-                "en": "Top of right button",
+                "en": "Right button up",
                 "nl": "Bovenste knop rechts",
-                "de": "Rechte Taste oben"
+                "de": "Rechte Taste auf"
               }
             },
             {
               "id": "4",
               "label": {
-                "en": "Bottom of right button",
+                "en": "Right button down",
                 "nl": "Onderste knop rechts",
-                "de": "Rechte Taste unten"
+                "de": "Rechte Taste ab"
               }
             }
           ]
@@ -55,9 +55,9 @@
           "name": "clickcount",
           "type": "number",
           "title": {
-            "en": "Keypresses",
+            "en": "Number of times a button has been pressed",
             "nl": "Aantal keer ingedrukt",
-            "de": "Tastendrücke"
+            "de": "Anzahl der Tastendrücke"
           },
           "placeholder" : "2-5",
           "min": 2,

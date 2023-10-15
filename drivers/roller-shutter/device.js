@@ -7,7 +7,7 @@ class RollerShutterDevice extends ZwaveDevice {
 	async onNodeInit() {
 		this.enableDebug();
 
-		this.log('RollerShutter has been inited');
+		this.log('RollerShutter has been initialized');
 
 		this.registerCapability('windowcoverings_set', 'SWITCH_MULTILEVEL');
 		if(!this.hasCapability('measure_power')) this.addCapability('measure_power');
