@@ -79,12 +79,12 @@
       "title": {
         "en": "Turned on or off",
         "nl": "Aan of uit gezet",
-        "de": "Ein oder aus geschaltet"
+        "de": "Ein- oder ausgeschaltet"
       },
       "titleFormatted": {
         "en": "Output [[output]] turned on or off",
         "nl": "Uitgang [[output]] werd aan of uit gezet",
-        "de": "Ausgang [[output]] wurde ein oder aus geschaltet"
+        "de": "Ausgang [[output]] wurde ein- oder ausgeschaltet"
       },
       "args": [
         {

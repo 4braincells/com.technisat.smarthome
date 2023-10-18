@@ -4,6 +4,7 @@
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "name": {
+    "de": "Technisat SmartHome App",
     "en": "Technisat SmartHome"
   },
   "brandColor": "#009EF3",

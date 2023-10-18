@@ -78,7 +78,7 @@
     "nl": "Ondersteuning voor scenes op alle apparaten toegevoegd. Instructies voor ontkoppelen gecorrigeerd."
   },
   "1.5.1": {
-    "en": "Workarround for power measure not going back to 0 watt when the device is turned off.",
+    "en": "Workaround for power measure not going back to 0 watt when the device is turned off.",
     "nl": "Oplossing voor het stroomverbruik welke niet naar 0 watt gaat als het apparaat is uitgeschakelt."
   },
   "1.5.2": {
@@ -112,5 +112,10 @@
   "1.5.9": {
     "en": "Removed debugging code. Updated Z-Wave driver and Homey libary.",
     "nl": "Debug code verwijderd. Z-Wave driver en Homey bibliotheken geupdatet."
+  },
+  "1.6.0": {
+    "en": "Labels and texts adapted to the roller shutter switch.",
+    "nl": "App beschrijving bijgewerkt.",
+    "de": "Beschriftungen und Texte zum Rollladenschalter angepasst."
   }
 }

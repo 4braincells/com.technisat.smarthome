@@ -8,9 +8,9 @@
         "de": "Szenen"
       },
       "titleFormatted": {
-        "en": "Button [[button]] is clicked [[clickcount]] times",
-        "nl": "Knop [[button]] is [[clickcount]] ingedrukt",
-        "de": "Taste [[button]] ist [[clickcount]] gedrückt"
+        "en": "Button [[button]] is pressed [[clickcount]] times",
+        "nl": "Knop [[button]] is [[clickcount]] keer ingedrukt",
+        "de": "[[button]] wurde [[clickcount]] Mal gedrückt"
       },
       "args": [
         {
@@ -20,33 +20,33 @@
             {
               "id": "1",
               "label": {
-                "en": "Top left button",
+                "en": "Left button up",
                 "nl": "Bovenste knop links",
-                "de": "Obere Taste links"
+                "de": "Linke Taste auf"
               }
             },
             {
               "id": "2",
               "label": {
-                "en": "Bottom left button",
+                "en": "Left button down",
                 "nl": "Onderste knop links",
-                "de": "Untere Taste links"
+                "de": "Linke Taste ab"
               }
             },
             {
               "id": "3",
               "label": {
-                "en": "Top right button",
+                "en": "Right button up",
                 "nl": "Bovenste knop rechts",
-                "de": "Obere Taste rechts"
+                "de": "Rechte Taste auf"
               }
             },
             {
               "id": "4",
               "label": {
-                "en": "Bottom right button",
+                "en": "Right button down",
                 "nl": "Onderste knop rechts",
-                "de": "Untere Taste rechts"
+                "de": "Rechte Taste ab"
               }
             }
           ]
@@ -55,9 +55,9 @@
           "name": "clickcount",
           "type": "number",
           "title": {
-            "en": "Times pressed",
+            "en": "Number of times a button has been pressed",
             "nl": "Aantal keer ingedrukt",
-            "de": "Wie oft gedrückt"
+            "de": "Anzahl der Tastendrücke"
           },
           "placeholder" : "2-5",
           "min": 2,

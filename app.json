@@ -5,6 +5,7 @@
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "name": {
+    "de": "Technisat SmartHome App",
     "en": "Technisat SmartHome"
   },
   "brandColor": "#009EF3",
@@ -131,12 +132,12 @@
         "title": {
           "en": "Turned on or off",
           "nl": "Aan of uit gezet",
-          "de": "Ein oder aus geschaltet"
+          "de": "Ein- oder ausgeschaltet"
         },
         "titleFormatted": {
           "en": "Output [[output]] turned on or off",
           "nl": "Uitgang [[output]] werd aan of uit gezet",
-          "de": "Ausgang [[output]] wurde ein oder aus geschaltet"
+          "de": "Ausgang [[output]] wurde ein- oder ausgeschaltet"
         },
         "args": [
           {
@@ -247,9 +248,9 @@
           "de": "Szenen"
         },
         "titleFormatted": {
-          "en": "Button [[button]] is clicked [[clickcount]] times",
-          "nl": "Knop [[button]] is [[clickcount]] ingedrukt",
-          "de": "Taste [[button]] ist [[clickcount]] gedrückt"
+          "en": "Button [[button]] is pressed [[clickcount]] times",
+          "nl": "Knop [[button]] is [[clickcount]] keer ingedrukt",
+          "de": "[[button]] wurde [[clickcount]] Mal gedrückt"
         },
         "args": [
           {
@@ -264,33 +265,33 @@
               {
                 "id": "1",
                 "label": {
-                  "en": "Top left button",
+                  "en": "Left button up",
                   "nl": "Bovenste knop links",
-                  "de": "Obere Taste links"
+                  "de": "Linke Taste auf"
                 }
               },
               {
                 "id": "2",
                 "label": {
-                  "en": "Bottom left button",
+                  "en": "Left button down",
                   "nl": "Onderste knop links",
-                  "de": "Untere Taste links"
+                  "de": "Linke Taste ab"
                 }
               },
               {
                 "id": "3",
                 "label": {
-                  "en": "Top right button",
+                  "en": "Right button up",
                   "nl": "Bovenste knop rechts",
-                  "de": "Obere Taste rechts"
+                  "de": "Rechte Taste auf"
                 }
               },
               {
                 "id": "4",
                 "label": {
-                  "en": "Bottom right button",
+                  "en": "Right button down",
                   "nl": "Onderste knop rechts",
-                  "de": "Untere Taste rechts"
+                  "de": "Rechte Taste ab"
                 }
               }
             ]
@@ -299,9 +300,9 @@
             "name": "clickcount",
             "type": "number",
             "title": {
-              "en": "Times pressed",
+              "en": "Number of times a button has been pressed",
               "nl": "Aantal keer ingedrukt",
-              "de": "Wie oft gedrückt"
+              "de": "Anzahl der Tastendrücke"
             },
             "placeholder": "2-5",
             "min": 2,
@@ -876,16 +877,16 @@
         "learnmode": {
           "image": "/drivers/roller-shutter/assets/learnmode.svg",
           "instruction": {
-            "en": "Press the top button on your Roller shutter three times within a second.",
+            "en": "Press the top of left button (T1) on your Roller shutter three times within a second.",
             "nl": "Druk driemaal binnen een seconde op de bovenste knop van uw Rolluik schakelaar.",
-            "de": "Drücken Sie die obere Taste auf Ihrem {{DriverNameDe}} dreimal innerhalb einer Sekunde."
+            "de": "Drücken Sie die linke Taste oben (T1) auf Ihrem {{DriverNameDe}} dreimal innerhalb einer Sekunde."
           }
         },
         "unlearnmode": {
           "instruction": {
-            "en": "Hold the top left button for at least 10 seconds, the LED should light up red.",
+            "en": "Hold the top of the left button (T1) for at least 10 seconds, the LED should light up red.",
             "nl": "Houd de knop linksboven ingedrukt voor minstens 10 seconden. De LED brand nu rood.",
-            "de": "Halten Sie die linkere obere Taste mindestens 10 Sekunden lang gedrückt. Die LED sollte rot leuchten."
+            "de": "Halten Sie die linke Taste oben (T1) mindestens 10 Sekunden lang gedrückt. Die LED sollte rot leuchten."
           }
         },
         "associationGroupsOptions": {
@@ -893,7 +894,7 @@
             "hint": {
               "en": "The lifeline group reports the device's status.",
               "nl": "De lifeline groep rapporteert de status van het apparaat.",
-              "de": "Die lifeline gruppe meldet den Status des Geräts."
+              "de": "Die lifeline-Gruppe meldet den Status des Geräts."
             }
           }
         }
@@ -910,7 +911,7 @@
           "hint": {
             "en": "Enable/disable central scene notifications for 2x-5x button presses.",
             "nl": "Zet centrale scene notificaties aan voor 2-5 knop drukken.",
-            "de": "Aktiviert/Deaktiviert Zentrale Szenen Benachrichtigung für 2x-5x faches drücken."
+            "de": "Aktiviert/Deaktiviert Zentralszenen für 2- bis 5-faches Drücken."
           },
           "zwave": {
             "index": 1,
@@ -937,7 +938,7 @@
           "hint": {
             "en": "Interval of current power meter reports in 10 seconds increments.",
             "nl": "Interval van periodieke rapportage van het opgenomen vermogen . In stappen van 10 seconden.",
-            "de": "Intervall der aktuellen Stromverbrauch-Meldung. Wert in 10 sekunden."
+            "de": "Intervall der aktuellen Stromverbrauch-Meldung. Wert in 10 Sekunden."
           },
           "zwave": {
             "index": 2,
@@ -960,7 +961,7 @@
           "hint": {
             "en": "Interval of active energy meter reports in minutes. Value in minutes.",
             "nl": "Interval van periodieke rapportage van het energieverbruik. Waarde in minuten.",
-            "de": "Intervall der aktuellen Energieverbrauch-Meldung. Wert in minuten."
+            "de": "Intervall der aktuellen Energieverbrauchsmeldung. Wert in Minuten."
           },
           "zwave": {
             "index": 3,
@@ -974,7 +975,7 @@
           "label": {
             "en": "Calibration",
             "nl": "Kalibratie",
-            "de": "Kalibration"
+            "de": "Kalibrierung"
           },
           "hint": {
             "en": "Manual shutter calibration - shutter will move up, down and up again.",

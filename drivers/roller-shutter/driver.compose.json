@@ -30,16 +30,16 @@
     "learnmode": {
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
-        "en": "Press the top button on your {{driverNameEn}} three times within a second.",
+        "en": "Press the top of left button (T1) on your {{driverNameEn}} three times within a second.",
         "nl": "Druk driemaal binnen een seconde op de bovenste knop van uw {{driverNameNl}}.",
-        "de": "Drücken Sie die obere Taste auf Ihrem {{DriverNameDe}} dreimal innerhalb einer Sekunde."
+        "de": "Drücken Sie die linke Taste oben (T1) auf Ihrem {{DriverNameDe}} dreimal innerhalb einer Sekunde."
       }
     },
     "unlearnmode": {
 			"instruction": {
-        "en": "Hold the top left button for at least 10 seconds, the LED should light up red.",
+        "en": "Hold the top of the left button (T1) for at least 10 seconds, the LED should light up red.",
         "nl": "Houd de knop linksboven ingedrukt voor minstens 10 seconden. De LED brand nu rood.",
-        "de": "Halten Sie die linkere obere Taste mindestens 10 Sekunden lang gedrückt. Die LED sollte rot leuchten."
+        "de": "Halten Sie die linke Taste oben (T1) mindestens 10 Sekunden lang gedrückt. Die LED sollte rot leuchten."
       }
     },
     "associationGroupsOptions": {
@@ -47,7 +47,7 @@
         "hint": {
           "en": "The lifeline group reports the device's status.",
           "nl": "De lifeline groep rapporteert de status van het apparaat.",
-          "de": "Die lifeline gruppe meldet den Status des Geräts."
+          "de": "Die lifeline-Gruppe meldet den Status des Geräts."
         }
       }
     }
