@@ -108,5 +108,9 @@
   "1.5.8": {
     "en": "Added debugging code to troubleshoot power measure issues on double switch paired to Homey Pro 2023.",
     "nl": "Code toegevoegd om de problemen met de double switch i.c.m Homey Pro 2023 te debuggen.."
+  },
+  "1.5.9": {
+    "en": "Removed debugging code. Updated Z-Wave driver and Homey libary.",
+    "nl": "Debug code verwijderd. Z-Wave driver en Homey bibliotheken geupdatet."
   }
 }
