@@ -47,14 +47,6 @@ class DoubleSwitch extends ZwaveDevice {
 
 		// Get the measure_power poll setting
 		var powerSetting = this.getSetting('current_report');
-		this.log(`Double switch power poll interval: ${powerSetting}`);
-
-		if (powerSetting < 3 || !powerSetting || typeof(powerSetting !== 'undefined')) {
-			powerSetting = 3;
-		}
-
-		this.log(`Double switch power poll after setting default: ${powerSetting}`);
-
 		powerSetting *= 10000; // * 10 (seconds due device format) * 1000ms (1 second)		
 
 		this.registerCapability('measure_power.output1', 'METER', {

@@ -110,6 +110,10 @@
     "nl": "Code toegevoegd om de problemen met de double switch i.c.m Homey Pro 2023 te debuggen.."
   },
   "1.5.9": {
+    "en": "Removed debugging code. Updated Z-Wave driver and Homey libary.",
+    "nl": "Debug code verwijderd. Z-Wave driver en Homey bibliotheken geupdatet."
+  },
+  "1.6.0": {
     "en": "Labels and texts adapted to the roller shutter switch.",
     "nl": "App beschrijving bijgewerkt.",
     "de": "Beschriftungen und Texte zum Rollladenschalter angepasst."
